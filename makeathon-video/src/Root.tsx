@@ -2,6 +2,12 @@ import React from "react";
 import { Composition } from "remotion";
 import { layout16x9, layout9x16 } from "./constants/layout";
 import { MainSequence } from "./scenes/MainSequence";
+import { loadFont } from "@remotion/google-fonts/Inter";
+
+const { waitUntilDone } = loadFont("normal", {
+  subsets: ["latin"],
+  weights: ["400", "500", "600"],
+});
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -9,7 +15,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="MakeathonStory16x9"
         component={() => <MainSequence layout={layout16x9} />}
-        durationInFrames={1620}
+        durationInFrames={1605}
         fps={30}
         width={1920}
         height={1080}
@@ -17,7 +23,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="MakeathonStory9x16"
         component={() => <MainSequence layout={layout9x16} />}
-        durationInFrames={1620}
+        durationInFrames={1605}
         fps={30}
         width={1080}
         height={1920}
