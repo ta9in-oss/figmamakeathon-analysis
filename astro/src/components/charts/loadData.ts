@@ -43,7 +43,8 @@ export async function loadCSV(): Promise<Entry[]> {
   });
 }
 
-export function winnerColor() { return '#1a1a1a'; }           /* Black */
-export function nonWinnerColor() { return '#d4d4d8'; }        /* Light gray */
-export function accentColor() { return '#52525b'; }            /* Slate */
-export function gridColor() { return '#e5e5e5'; }             /* Border */
+export function winnerColor() { return '#1D9E75'; }           /* Teal 400 */
+export function nonWinnerColor() { return '#888780'; }        /* Gray 400 */
+export function accentColor() { return '#BA7517'; }            /* Amber 400 */
+export function highlightColor() { return '#BA7517'; }         /* Amber 400 */
+export function gridColor() { return '#D3D1C7'; }             /* Border */
