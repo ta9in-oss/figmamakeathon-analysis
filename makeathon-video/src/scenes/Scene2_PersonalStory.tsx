@@ -2,7 +2,6 @@ import React from "react";
 import {
   AbsoluteFill,
   useCurrentFrame,
-  interpolate,
   Sequence,
 } from "remotion";
 import { colors } from "../constants/colors";
