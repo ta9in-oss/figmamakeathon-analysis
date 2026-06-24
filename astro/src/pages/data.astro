@@ -5,33 +5,33 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Data">
   <section class="mx-auto max-w-4xl px-6 py-16">
     <h1 class="text-3xl font-bold tracking-tight mb-2">Raw Data</h1>
-    <p class="text-text-muted-foreground mb-12">Download the complete datasets used in this analysis.</p>
+    <p class="text-muted-foreground mb-12">Download the complete datasets used in this analysis.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-      <a href="/data/all_entries.csv" download class="rounded-xl border border-border-border p-6 bg-bg-card hover:border-text-primary transition-colors group">
-        <h3 class="font-medium mb-2 group-hover:text-text-primary transition-colors">All Entries</h3>
-        <p class="text-sm text-text-muted-foreground">Complete catalog of 318 scraped entries across all editions. Includes engagement metrics, social data, and winner flags.</p>
-        <p class="text-xs text-text-muted-foreground/70 mt-3">all_entries.csv</p>
+      <a href="/data/all_entries.csv" download class="rounded-xl border border-border p-6 bg-card hover:border-text-primary transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-primary transition-colors">All Entries</h3>
+        <p class="text-sm text-muted-foreground">Complete catalog of 318 scraped entries across all editions. Includes engagement metrics, social data, and winner flags.</p>
+        <p class="text-xs text-muted-foreground/70 mt-3">all_entries.csv</p>
       </a>
-      <a href="/data/winners.csv" download class="rounded-xl border border-border-border p-6 bg-bg-card hover:border-text-primary transition-colors group">
-        <h3 class="font-medium mb-2 group-hover:text-text-primary transition-colors">Winners</h3>
-        <p class="text-sm text-text-muted-foreground">Detailed metadata for 23 winners including project URLs, social presence, and recap inclusion.</p>
-        <p class="text-xs text-text-muted-foreground/70 mt-3">winners.csv</p>
+      <a href="/data/winners.csv" download class="rounded-xl border border-border p-6 bg-card hover:border-text-primary transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-primary transition-colors">Winners</h3>
+        <p class="text-sm text-muted-foreground">Detailed metadata for 23 winners including project URLs, social presence, and recap inclusion.</p>
+        <p class="text-xs text-muted-foreground/70 mt-3">winners.csv</p>
       </a>
-      <a href="/data/video_analysis.csv" download class="rounded-xl border border-border-border p-6 bg-bg-card hover:border-text-primary transition-colors group">
-        <h3 class="font-medium mb-2 group-hover:text-text-primary transition-colors">Video Analysis</h3>
-        <p class="text-sm text-text-muted-foreground">Upload date analysis for winner videos. Compares video dates against challenge start dates.</p>
-        <p class="text-xs text-text-muted-foreground/70 mt-3">video_analysis.csv</p>
+      <a href="/data/video_analysis.csv" download class="rounded-xl border border-border p-6 bg-card hover:border-text-primary transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-primary transition-colors">Video Analysis</h3>
+        <p class="text-sm text-muted-foreground">Upload date analysis for winner videos. Compares video dates against challenge start dates.</p>
+        <p class="text-xs text-muted-foreground/70 mt-3">video_analysis.csv</p>
       </a>
-      <a href="/charts/" class="rounded-xl border border-border-border p-6 bg-bg-card hover:border-text-primary transition-colors group">
-        <h3 class="font-medium mb-2 group-hover:text-text-primary transition-colors">Interactive Charts</h3>
-        <p class="text-sm text-text-muted-foreground">Four interactive plotly charts: timing histogram, engagement scatter, comparison boxplots, and recap inclusion.</p>
-        <p class="text-xs text-text-muted-foreground/70 mt-3">View charts</p>
+      <a href="/charts/" class="rounded-xl border border-border p-6 bg-card hover:border-text-primary transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-primary transition-colors">Interactive Charts</h3>
+        <p class="text-sm text-muted-foreground">Four interactive plotly charts: timing histogram, engagement scatter, comparison boxplots, and recap inclusion.</p>
+        <p class="text-xs text-muted-foreground/70 mt-3">View charts</p>
       </a>
     </div>
 
     <h2 class="text-xl font-semibold mb-4">Data Schema</h2>
-    <div class="overflow-x-auto rounded-lg border border-border-border">
+    <div class="overflow-x-auto rounded-lg border border-border">
       <table>
         <thead>
           <tr><th>Field</th><th>Type</th><th>Description</th></tr>

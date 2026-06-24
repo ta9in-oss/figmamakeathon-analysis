@@ -7,23 +7,23 @@ import Layout from "../layouts/Layout.astro";
     <div class="animate-in">
       <h1 class="text-3xl font-extrabold tracking-tight mb-2">Video and Social Media Analysis</h1>
     </div>
-    <p class="text-text-muted-foreground mb-12 animate-in animate-in-delay-1">
+    <p class="text-muted-foreground mb-12 animate-in animate-in-delay-1">
       Deep investigation into Contra submission videos, social media presence,
       and repeat winner patterns across all three makeathon editions.
     </p>
 
-    <div class="rounded-2xl border border-text-primary/20 bg-bg-card p-6 mb-12 animate-in animate-in-delay-2">
+    <div class="rounded-2xl border border-text-primary/20 bg-card p-6 mb-12 animate-in animate-in-delay-2">
       <h2 class="font-semibold mb-2">Verdict</h2>
-      <p class="text-text-muted-foreground leading-relaxed">
-        <strong class="text-text-foreground font-semibold">No pre-challenge videos exist. </strong>
+      <p class="text-muted-foreground leading-relaxed">
+        <strong class="text-foreground font-semibold">No pre-challenge videos exist. </strong>
         All Contra submissions include hosted videos, but these serve as project demos for
         judging and do not expose public upload dates. The real differentiator is
-        <strong class="text-text-foreground font-semibold">social media presence and repeat participation</strong>.
+        <strong class="text-foreground font-semibold">social media presence and repeat participation</strong>.
       </p>
     </div>
 
-    <h2 class="text-xl font-bold mb-4 text-text-primary animate-in">Methodology</h2>
-    <p class="text-text-muted-foreground leading-relaxed mb-8 animate-in animate-in-delay-1">
+    <h2 class="text-xl font-bold mb-4 text-primary animate-in">Methodology</h2>
+    <p class="text-muted-foreground leading-relaxed mb-8 animate-in animate-in-delay-1">
       We scraped Contra community topic pages and individual profiles with Playwright,
       extracted media.contra.com video URLs, analyzed Cloudinary video metadata,
       checked all winner project pages (figma.site and figma.bot URLs),
@@ -31,63 +31,63 @@ import Layout from "../layouts/Layout.astro";
       and cross-referenced Figma blog interviews for build timeline quotes.
     </p>
 
-    <h2 class="text-xl font-bold mb-4 text-text-primary animate-in">Key Patterns</h2>
+    <h2 class="text-xl font-bold mb-4 text-primary animate-in">Key Patterns</h2>
 
     <div class="space-y-4 mb-12">
-      <div class="rounded-2xl border border-border-border p-6 bg-bg-card card-hover animate-in animate-in-delay-1">
+      <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-1">
         <h3 class="font-semibold mb-2">Pattern 1: Contra Submission Videos Are Universal</h3>
-        <p class="text-sm text-text-muted-foreground leading-relaxed">
+        <p class="text-sm text-muted-foreground leading-relaxed">
           Every makeathon entry includes Contra-hosted videos uploaded to
-          <code class="text-xs bg-bg-background px-1.5 py-0.5 rounded font-mono">media.contra.com</code> (Cloudinary CDN).
+          <code class="text-xs bg-background px-1.5 py-0.5 rounded font-mono">media.contra.com</code> (Cloudinary CDN).
           These serve as project demos for the judging panel. Since all entries have them,
-          video presence on Contra alone is <strong class="text-text-foreground font-semibold">not a winning differentiator</strong>.
+          video presence on Contra alone is <strong class="text-foreground font-semibold">not a winning differentiator</strong>.
         </p>
       </div>
 
-      <div class="rounded-2xl border border-border-border p-6 bg-bg-card card-hover animate-in animate-in-delay-2">
+      <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-2">
         <h3 class="font-semibold mb-2">Pattern 2: Social Handle Tagging (56% of Winners)</h3>
-        <p class="text-sm text-text-muted-foreground leading-relaxed">
-          <strong class="text-text-foreground font-semibold">5 out of 9 winners</strong> had X/Twitter handles
+        <p class="text-sm text-muted-foreground leading-relaxed">
+          <strong class="text-foreground font-semibold">5 out of 9 winners</strong> had X/Twitter handles
           tagged in the official @figma winner announcement. Winners tagged on X benefit from
           direct visibility to Figma's audience. However, 4 winners won without being tagged,
           proving project quality can overcome lower social presence.
         </p>
       </div>
 
-      <div class="rounded-2xl border border-border-border p-6 bg-bg-card card-hover animate-in animate-in-delay-3">
+      <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-3">
         <h3 class="font-semibold mb-2">Pattern 3: Repeat Winners Exist</h3>
-        <p class="text-sm text-text-muted-foreground leading-relaxed">
-          <strong class="text-text-foreground font-semibold">Lee Black (@mrblackstudio)</strong> is the only
+        <p class="text-sm text-muted-foreground leading-relaxed">
+          <strong class="text-foreground font-semibold">Lee Black (@mrblackstudio)</strong> is the only
           two-time winner across editions. He won "Boundary Pushing" for Airwwave in March 2026,
           then "Innovative Workflow" for Connected Earth in Config 2026 (announced June 24, 2026).
           Repeat participation with entirely new projects appears to be a viable strategy.
         </p>
       </div>
 
-      <div class="rounded-2xl border border-border-border p-6 bg-bg-card card-hover animate-in animate-in-delay-4">
+      <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-4">
         <h3 class="font-semibold mb-2">Pattern 4: Award Categories Confirm Social Matters</h3>
-        <p class="text-sm text-text-muted-foreground leading-relaxed">
+        <p class="text-sm text-muted-foreground leading-relaxed">
           The existence of "Fan Favorite on Social" (won by @DannPetty) and "Build in Public"
           (Config 2026) as official award categories confirms that
-          <strong class="text-text-foreground font-semibold">social media presence is an explicitly judged criterion</strong>.
+          <strong class="text-foreground font-semibold">social media presence is an explicitly judged criterion</strong>.
           These are not incidental correlations.
         </p>
       </div>
 
-      <div class="rounded-2xl border border-border-border p-6 bg-bg-card card-hover animate-in">
+      <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in">
         <h3 class="font-semibold mb-2">Pattern 5: YouTube Demos Are Rare (1 in 9)</h3>
-        <p class="text-sm text-text-muted-foreground leading-relaxed">
+        <p class="text-sm text-muted-foreground leading-relaxed">
           Only Dann Petty (Reframe It) published a YouTube demo, uploaded
-          <strong class="text-text-foreground font-semibold">March 4, 2026</strong> (Day 31 of the March 2026 challenge window).
-          The video was posted <strong class="text-text-foreground font-semibold">during the challenge, not before</strong>.
+          <strong class="text-foreground font-semibold">March 4, 2026</strong> (Day 31 of the March 2026 challenge window).
+          The video was posted <strong class="text-foreground font-semibold">during the challenge, not before</strong>.
           YouTube presence is uncommon but signals high social investment.
         </p>
       </div>
 
-      <div class="rounded-2xl border border-border-border p-6 bg-bg-card card-hover animate-in">
+      <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in">
         <h3 class="font-semibold mb-2">Pattern 6: Config 2026 Drew 11,000+ Participants</h3>
-        <p class="text-sm text-text-muted-foreground leading-relaxed">
-          The latest edition was the largest yet, with <strong class="text-text-foreground font-semibold">over 11,000 participants</strong>.
+        <p class="text-sm text-muted-foreground leading-relaxed">
+          The latest edition was the largest yet, with <strong class="text-foreground font-semibold">over 11,000 participants</strong>.
           Winners announced June 24, 2026: Visual Atlas (Grand Prize), Doodle Fonts (2nd),
           Your Eyes Can Speak, Connected Earth, Still Here Focus, and Sound Check.
           Lee Black's second win in this edition reinforces the repeat-winner pattern.
@@ -95,8 +95,8 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
 
-    <h2 class="text-xl font-bold mb-4 text-text-primary animate-in">Winner Social Profiles</h2>
-    <div class="overflow-x-auto rounded-xl border border-border-border mb-12 animate-in animate-in-delay-1">
+    <h2 class="text-xl font-bold mb-4 text-primary animate-in">Winner Social Profiles</h2>
+    <div class="overflow-x-auto rounded-xl border border-border mb-12 animate-in animate-in-delay-1">
       <table>
         <thead>
           <tr>
@@ -113,23 +113,23 @@ import Layout from "../layouts/Layout.astro";
           <tr><td class="font-semibold">Common Thread</td><td>Charlota Blunarova</td><td>Mar 2026</td><td class="font-mono text-xs">@0xCharlota</td><td>Yes</td><td>--</td><td>--</td></tr>
           <tr><td class="font-semibold">TOKYO</td><td>Kiel Cole</td><td>Mar 2026</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
           <tr><td class="font-semibold">Pucker</td><td>Aleyna Catak</td><td>Mar 2026</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
-          <tr class="bg-bg-background"><td class="font-semibold">Airwwave</td><td>Lee Black</td><td>Mar 2026</td><td class="font-mono text-xs">@mrblackstudio</td><td>Yes</td><td>--</td><td class="text-text-primary font-bold">2x</td></tr>
+          <tr class="bg-background"><td class="font-semibold">Airwwave</td><td>Lee Black</td><td>Mar 2026</td><td class="font-mono text-xs">@mrblackstudio</td><td>Yes</td><td>--</td><td class="text-primary font-bold">2x</td></tr>
           <tr><td class="font-semibold">Duet Booth</td><td>Paige Latimer</td><td>Mar 2026</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
           <tr><td class="font-semibold">Reframe It</td><td>Dann Petty</td><td>Mar 2026</td><td class="font-mono text-xs">@DannPetty</td><td>Yes</td><td>Mar 4</td><td>--</td></tr>
           <tr><td class="font-semibold">Visual Atlas</td><td>Bene Brandhofer</td><td>Config 2026</td><td class="font-mono text-xs">@benebrandhofer</td><td>Yes</td><td>--</td><td>--</td></tr>
-          <tr class="bg-bg-background"><td class="font-semibold">Connected Earth</td><td>Lee Black</td><td>Config 2026</td><td class="font-mono text-xs">@mrblackstudio</td><td>Yes</td><td>--</td><td class="text-text-primary font-bold">2x</td></tr>
+          <tr class="bg-background"><td class="font-semibold">Connected Earth</td><td>Lee Black</td><td>Config 2026</td><td class="font-mono text-xs">@mrblackstudio</td><td>Yes</td><td>--</td><td class="text-primary font-bold">2x</td></tr>
           <tr><td class="font-semibold">Web Poetry</td><td>Cara Ellis</td><td>Sep 2025</td><td>--</td><td>--</td><td>--</td><td>--</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="rounded-2xl border border-border-border bg-bg-card p-6 animate-in">
+    <div class="rounded-2xl border border-border bg-card p-6 animate-in">
       <h3 class="font-semibold mb-2">Data Download</h3>
-      <p class="text-sm text-text-muted-foreground mb-3">
+      <p class="text-sm text-muted-foreground mb-3">
         Complete analysis with per-winner video URLs, social handles, repeat winner status,
         and build timeline evidence.
       </p>
-      <a href="/data/deep_video_analysis.csv" download class="text-sm font-medium text-text-primary hover:text-text-primary/80 transition-colors">
+      <a href="/data/deep_video_analysis.csv" download class="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
         Download deep_video_analysis.csv
       </a>
     </div>

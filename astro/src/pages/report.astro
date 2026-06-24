@@ -9,29 +9,29 @@ import RecapChart from "../components/charts/RecapChart";
   <article class="mx-auto max-w-3xl px-6 py-16">
     <header class="mb-16 animate-in">
       <h1 class="text-4xl font-extrabold tracking-tight mb-4 leading-tight">What Separates Winners from Everyone Else?</h1>
-      <p class="text-text-muted-foreground text-lg">A data-backed community report — June 2026</p>
+      <p class="text-muted-foreground text-lg">A data-backed community report — June 2026</p>
     </header>
 
     <section class="mb-16 animate-in animate-in-delay-1">
-      <h2 class="text-xl font-bold mb-4 text-text-primary">The Pattern</h2>
-      <p class="text-text-muted-foreground leading-relaxed mb-4">
+      <h2 class="text-xl font-bold mb-4 text-primary">The Pattern</h2>
+      <p class="text-muted-foreground leading-relaxed mb-4">
         After analyzing 318 entries across three editions, a clear pattern emerges.
         Early posting correlates with winning, but it is not the whole story. Winners also tend to have:
       </p>
-      <ul class="space-y-2 text-text-muted-foreground ml-4">
-        <li>Higher engagement: <strong class="text-text-foreground font-semibold">8.7x</strong> the non-winner average</li>
-        <li>Greater social presence: <strong class="text-text-foreground font-semibold">3.0 vs 1.1</strong> platforms cross-posted</li>
-        <li>Higher recap inclusion: <strong class="text-text-foreground font-semibold">82.6% vs 4.1%</strong></li>
-        <li>Stronger video presence: <strong class="text-text-foreground font-semibold">95.7% vs 46.4%</strong></li>
+      <ul class="space-y-2 text-muted-foreground ml-4">
+        <li>Higher engagement: <strong class="text-foreground font-semibold">8.7x</strong> the non-winner average</li>
+        <li>Greater social presence: <strong class="text-foreground font-semibold">3.0 vs 1.1</strong> platforms cross-posted</li>
+        <li>Higher recap inclusion: <strong class="text-foreground font-semibold">82.6% vs 4.1%</strong></li>
+        <li>Stronger video presence: <strong class="text-foreground font-semibold">95.7% vs 46.4%</strong></li>
       </ul>
     </section>
 
     <section class="mb-16">
-      <h2 class="text-xl font-bold mb-6 text-text-primary animate-in">Edition-by-Edition Breakdown</h2>
+      <h2 class="text-xl font-bold mb-6 text-primary animate-in">Edition-by-Edition Breakdown</h2>
       <div class="mb-10 animate-in animate-in-delay-1">
         <h3 class="font-semibold mb-3">Figma Make-a-thon (Sep 3-10, 2025)</h3>
-        <p class="text-sm text-text-muted-foreground mb-3">Over 10,000 creators participated. $100K prize pool.</p>
-        <div class="overflow-x-auto rounded-xl border border-border-border">
+        <p class="text-sm text-muted-foreground mb-3">Over 10,000 creators participated. $100K prize pool.</p>
+        <div class="overflow-x-auto rounded-xl border border-border">
           <table>
             <thead><tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr></thead>
             <tbody>
@@ -47,8 +47,8 @@ import RecapChart from "../components/charts/RecapChart";
       </div>
       <div class="mb-10 animate-in animate-in-delay-2">
         <h3 class="font-semibold mb-3">Figma Makeathon March 2026 (Feb-Mar 16)</h3>
-        <p class="text-sm text-text-muted-foreground mb-3">$100K prize pool. Six categories.</p>
-        <div class="overflow-x-auto rounded-xl border border-border-border">
+        <p class="text-sm text-muted-foreground mb-3">$100K prize pool. Six categories.</p>
+        <div class="overflow-x-auto rounded-xl border border-border">
           <table>
             <thead><tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr></thead>
             <tbody>
@@ -64,8 +64,8 @@ import RecapChart from "../components/charts/RecapChart";
       </div>
       <div class="mb-10 animate-in animate-in-delay-3">
         <h3 class="font-semibold mb-3">Config Makeathon 2026 (Jun 4-18)</h3>
-        <p class="text-sm text-text-muted-foreground mb-3">11,000+ participants. $100K prize pool.</p>
-        <div class="overflow-x-auto rounded-xl border border-border-border">
+        <p class="text-sm text-muted-foreground mb-3">11,000+ participants. $100K prize pool.</p>
+        <div class="overflow-x-auto rounded-xl border border-border">
           <table>
             <thead><tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr></thead>
             <tbody>
@@ -82,54 +82,54 @@ import RecapChart from "../components/charts/RecapChart";
     </section>
 
     <section class="mb-16">
-      <h2 class="text-xl font-bold mb-4 text-text-primary animate-in">The Timing Effect</h2>
-      <p class="text-text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
-        Winners posted on average <strong class="text-text-foreground font-semibold">Day 4.4</strong> of the submission window,
-        compared to <strong class="text-text-foreground font-semibold">Day 11.7</strong> for non-winners. That is a 7.3-day advantage.
+      <h2 class="text-xl font-bold mb-4 text-primary animate-in">The Timing Effect</h2>
+      <p class="text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
+        Winners posted on average <strong class="text-foreground font-semibold">Day 4.4</strong> of the submission window,
+        compared to <strong class="text-foreground font-semibold">Day 11.7</strong> for non-winners. That is a 7.3-day advantage.
         Early birds have a clear edge, but winners also appear throughout the submission window,
         suggesting quality trumps pure earliness.
       </p>
-      <div class="rounded-xl border border-border-border p-6 bg-bg-card animate-in animate-in-delay-2">
+      <div class="rounded-xl border border-border p-6 bg-card animate-in animate-in-delay-2">
         <TimingHistogram client:load />
       </div>
     </section>
 
     <section class="mb-16">
-      <h2 class="text-xl font-bold mb-4 text-text-primary animate-in">The Social Multiplier</h2>
-      <p class="text-text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
-        Winners cross-posted to an average of <strong class="text-text-foreground font-semibold">3.0 social platforms</strong>
+      <h2 class="text-xl font-bold mb-4 text-primary animate-in">The Social Multiplier</h2>
+      <p class="text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
+        Winners cross-posted to an average of <strong class="text-foreground font-semibold">3.0 social platforms</strong>
         compared to 1.1 for non-winners. Every additional platform linked correlates with
         higher visibility and engagement.
       </p>
-      <div class="rounded-xl border border-border-border p-6 bg-bg-card animate-in animate-in-delay-2">
+      <div class="rounded-xl border border-border p-6 bg-card animate-in animate-in-delay-2">
         <EngagementScatter client:load />
       </div>
     </section>
 
     <section class="mb-16">
-      <h2 class="text-xl font-bold mb-4 text-text-primary animate-in">The Recap Game</h2>
-      <p class="text-text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
-        <strong class="text-text-foreground font-semibold">82.6% of winners</strong> appeared in official Contra recap posts
+      <h2 class="text-xl font-bold mb-4 text-primary animate-in">The Recap Game</h2>
+      <p class="text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
+        <strong class="text-foreground font-semibold">82.6% of winners</strong> appeared in official Contra recap posts
         versus 4.1% of non-winners. This could mean recaps influence winning perception, or that the
         judging panel and recap writers converge on similar projects.
       </p>
-      <div class="rounded-xl border border-border-border p-6 bg-bg-card animate-in animate-in-delay-2">
+      <div class="rounded-xl border border-border p-6 bg-card animate-in animate-in-delay-2">
         <RecapChart client:load />
       </div>
     </section>
 
     <section class="mb-16 animate-in">
-      <h2 class="text-xl font-bold mb-4 text-text-primary">What This Means for Participants</h2>
-      <p class="text-text-muted-foreground leading-relaxed mb-4">
+      <h2 class="text-xl font-bold mb-4 text-primary">What This Means for Participants</h2>
+      <p class="text-muted-foreground leading-relaxed mb-4">
         If you are entering a makeathon, here is what the data suggests:
       </p>
-      <ol class="space-y-3 text-text-muted-foreground ml-4 list-decimal">
-        <li><strong class="text-text-foreground font-semibold">Post early</strong> — early entries accumulate more engagement and visibility over time</li>
-        <li><strong class="text-text-foreground font-semibold">Cross-post everywhere</strong> — each platform adds a multiplier effect on reach</li>
-        <li><strong class="text-text-foreground font-semibold">Include a video demo</strong> — video presence correlates with higher engagement scores</li>
-        <li><strong class="text-text-foreground font-semibold">Build in public</strong> — share your process, not just the final result. It is a judged category now</li>
-        <li><strong class="text-text-foreground font-semibold">Engage with the community</strong> — likes and comments create a feedback loop</li>
-        <li><strong class="text-text-foreground font-semibold">Come back for the next one</strong> — Lee Black won twice with entirely different projects</li>
+      <ol class="space-y-3 text-muted-foreground ml-4 list-decimal">
+        <li><strong class="text-foreground font-semibold">Post early</strong> — early entries accumulate more engagement and visibility over time</li>
+        <li><strong class="text-foreground font-semibold">Cross-post everywhere</strong> — each platform adds a multiplier effect on reach</li>
+        <li><strong class="text-foreground font-semibold">Include a video demo</strong> — video presence correlates with higher engagement scores</li>
+        <li><strong class="text-foreground font-semibold">Build in public</strong> — share your process, not just the final result. It is a judged category now</li>
+        <li><strong class="text-foreground font-semibold">Engage with the community</strong> — likes and comments create a feedback loop</li>
+        <li><strong class="text-foreground font-semibold">Come back for the next one</strong> — Lee Black won twice with entirely different projects</li>
       </ol>
     </section>
   </article>
