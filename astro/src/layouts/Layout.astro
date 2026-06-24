@@ -19,9 +19,9 @@ const { title, description } = Astro.props;
     <title>{title} — Figma Makeathon Analysis</title>
   </head>
   <body class="min-h-screen">
-    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-[var(--color-border)] bg-[var(--color-bg)]/90 backdrop-blur-sm fade-in">
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-border-border bg-bg-background/90 backdrop-blur-sm fade-in">
       <div class="mx-auto max-w-4xl px-6 py-3 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3 text-sm font-semibold tracking-tight text-[var(--color-text)] hover:text-[var(--color-accent)] transition-colors">
+        <a href="/" class="flex items-center gap-3 text-sm font-semibold tracking-tight text-text-foreground hover:text-text-primary transition-colors">
           <svg width="18" height="18" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Figma">
             <path d="M19 28.5C19 25.981 21.011 24 23.5 24C25.989 24 28 25.981 28 28.5C28 31.0193 25.989 33 23.5 33C21.011 33 19 31.0193 19 28.5Z" fill="#1ABCFE"/><path d="M10 37.5C10 35.015 12.011 33 14.5 33H19V37.5C19 39.985 16.989 42 14.5 42C12.011 42 10 39.985 10 37.5Z" fill="#0ACF83"/><path d="M19 10V19H23.5C25.989 19 28 17.015 28 14.5C28 11.985 25.989 10 23.5 10H19Z" fill="#FF7262"/><path d="M10 14.5C10 16.985 12.011 19 14.5 19H19V10H14.5C12.011 10 10 11.985 10 14.5Z" fill="#F24E1E"/><path d="M10 28.5C10 31.015 12.011 33 14.5 33H19V24H14.5C12.011 24 10 25.981 10 28.5Z" fill="#A259FF"/>
           </svg>
@@ -31,30 +31,30 @@ const { title, description } = Astro.props;
           <span>Makeathon Analysis</span>
         </a>
         <div class="flex gap-6 text-sm font-medium">
-          <a href="/report" class="text-[var(--color-text-dim)] hover:text-[var(--color-text)] transition-colors">Report</a>
-          <a href="/charts" class="text-[var(--color-text-dim)] hover:text-[var(--color-text)] transition-colors">Charts</a>
-          <a href="/data" class="text-[var(--color-text-dim)] hover:text-[var(--color-text)] transition-colors">Data</a>
-          <a href="/video-analysis" class="text-[var(--color-text-dim)] hover:text-[var(--color-text)] transition-colors">Videos</a>
+          <a href="/report" class="text-text-muted-foreground hover:text-text-foreground transition-colors">Report</a>
+          <a href="/charts" class="text-text-muted-foreground hover:text-text-foreground transition-colors">Charts</a>
+          <a href="/data" class="text-text-muted-foreground hover:text-text-foreground transition-colors">Data</a>
+          <a href="/video-analysis" class="text-text-muted-foreground hover:text-text-foreground transition-colors">Videos</a>
         </div>
       </div>
     </nav>
     <main class="pt-16">
       <slot />
     </main>
-    <footer class="border-t border-[var(--color-border)] mt-16 py-10">
-      <div class="mx-auto max-w-4xl px-6 text-sm text-[var(--color-text-subtle)]">
+    <footer class="border-t border-border-border mt-16 py-10">
+      <div class="mx-auto max-w-4xl px-6 text-sm text-text-muted-foreground/70">
         <p class="flex items-center gap-2">
           <span>Made with</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#ef4444" xmlns="http://www.w3.org/2000/svg" aria-label="heart">
             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
           </svg>
           <span>by</span>
-          <a href="https://ta9in.com" class="font-medium text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">ta9in</a>
+          <a href="https://ta9in.com" class="font-medium text-text-muted-foreground hover:text-text-primary transition-colors">ta9in</a>
         </p>
         <p class="mt-2">
-          <a href="https://github.com/ta9in-oss/figmamakeathon-analysis" class="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">GitHub</a>
+          <a href="https://github.com/ta9in-oss/figmamakeathon-analysis" class="text-text-muted-foreground hover:text-text-primary transition-colors">GitHub</a>
           <span class="mx-2">&middot;</span>
-          <a href="/data" class="text-[var(--color-text-dim)] hover:text-[var(--color-accent)] transition-colors">Raw Data</a>
+          <a href="/data" class="text-text-muted-foreground hover:text-text-primary transition-colors">Raw Data</a>
         </p>
       </div>
     </footer>
