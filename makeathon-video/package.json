@@ -1,11 +1,10 @@
 {
-  "name": "figmamakeathon-analysis-video",
+  "name": "makeathon-video",
   "version": "1.0.0",
-  "description": "Motion graphic video for Figma Makeathon Analysis",
   "scripts": {
     "dev": "remotion studio",
-    "build:16x9": "remotion render MakeathonStory-16x9 out/makeathon-story-16x9.mp4",
-    "build:9x16": "remotion render MakeathonStory-9x16 out/makeathon-story-9x16.mp4",
+    "build:16x9": "remotion render MakeathonStory16x9 out/makeathon-story-16x9.mp4",
+    "build:9x16": "remotion render MakeathonStory9x16 out/makeathon-story-9x16.mp4",
     "build": "pnpm build:16x9 && pnpm build:9x16"
   },
   "dependencies": {
