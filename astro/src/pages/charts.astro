@@ -1,42 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import TimingHistogram from "../components/charts/TimingHistogram";
+import EngagementScatter from "../components/charts/EngagementScatter";
+import ComparisonBoxplots from "../components/charts/ComparisonBoxplots";
+import RecapChart from "../components/charts/RecapChart";
 ---
 
 <Layout title="Charts">
   <section class="mx-auto max-w-4xl px-6 py-16">
     <h1 class="text-3xl font-bold tracking-tight mb-2">Interactive Charts</h1>
-    <p class="text-[var(--color-text-dim)] mb-12">All charts are interactive. Hover, zoom, and explore the data.</p>
+    <p class="text-[var(--color-text-dim)] mb-12">Live-rendered charts from the analysis dataset. Hover for details.</p>
 
-    <div class="space-y-12">
+    <div class="space-y-16">
       <div>
         <h2 class="text-lg font-semibold mb-3">Posting Day Distribution: Winners vs Non-Winners</h2>
         <p class="text-sm text-[var(--color-text-dim)] mb-4">When did winners post their submissions compared to everyone else?</p>
-        <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
-          <iframe src="/charts/all_timing_histogram.html" class="w-full h-[500px]" loading="lazy"></iframe>
+        <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+          <TimingHistogram client:load />
         </div>
       </div>
 
       <div>
         <h2 class="text-lg font-semibold mb-3">Engagement vs Posting Day</h2>
         <p class="text-sm text-[var(--color-text-dim)] mb-4">Scatter plot showing engagement scores against submission day. Purple dots are winners.</p>
-        <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
-          <iframe src="/charts/all_engagement_scatter.html" class="w-full h-[500px]" loading="lazy"></iframe>
+        <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+          <EngagementScatter client:load />
         </div>
       </div>
 
       <div>
         <h2 class="text-lg font-semibold mb-3">Key Metrics Comparison: Winners vs Non-Winners</h2>
-        <p class="text-sm text-[var(--color-text-dim)] mb-4">Box plots comparing posting day, engagement score, creator followers, and social platforms.</p>
-        <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
-          <iframe src="/charts/all_comparison_boxplots.html" class="w-full h-[700px]" loading="lazy"></iframe>
+        <p class="text-sm text-[var(--color-text-dim)] mb-4">Median values for posting day, engagement score, creator followers, and social platforms.</p>
+        <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+          <ComparisonBoxplots client:load />
         </div>
       </div>
 
       <div>
         <h2 class="text-lg font-semibold mb-3">Recap and Blog Inclusion Rates</h2>
         <p class="text-sm text-[var(--color-text-dim)] mb-4">Percentage of winners vs non-winners featured in official Contra recaps and Figma blog posts.</p>
-        <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
-          <iframe src="/charts/all_recap_inclusion.html" class="w-full h-[400px]" loading="lazy"></iframe>
+        <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+          <RecapChart client:load />
         </div>
       </div>
     </div>

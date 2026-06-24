@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import TimingHistogram from "../components/charts/TimingHistogram";
+import EngagementScatter from "../components/charts/EngagementScatter";
+import RecapChart from "../components/charts/RecapChart";
 ---
 
 <Layout title="Report">
@@ -25,14 +28,11 @@ import Layout from "../layouts/Layout.astro";
 
     <section class="mb-16">
       <h2 class="text-xl font-semibold mb-6 text-[var(--color-accent)]">Edition-by-Edition Breakdown</h2>
-
       <div class="mb-10">
         <h3 class="font-medium mb-3">Figma Make-a-thon (Sep 2025)</h3>
         <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
           <table>
-            <thead>
-              <tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr>
-            </thead>
+            <thead><tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr></thead>
             <tbody>
               <tr><td>Entries</td><td class="text-right">8</td><td class="text-right">104</td></tr>
               <tr><td>Avg Post Day</td><td class="text-right">Day 1.2</td><td class="text-right">Day 4.3</td></tr>
@@ -44,14 +44,11 @@ import Layout from "../layouts/Layout.astro";
           </table>
         </div>
       </div>
-
       <div class="mb-10">
         <h3 class="font-medium mb-3">Figma Makeathon March 2026</h3>
         <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
           <table>
-            <thead>
-              <tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr>
-            </thead>
+            <thead><tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr></thead>
             <tbody>
               <tr><td>Entries</td><td class="text-right">7</td><td class="text-right">88</td></tr>
               <tr><td>Avg Post Day</td><td class="text-right">Day 8.0</td><td class="text-right">Day 23.9</td></tr>
@@ -63,14 +60,11 @@ import Layout from "../layouts/Layout.astro";
           </table>
         </div>
       </div>
-
       <div class="mb-10">
         <h3 class="font-medium mb-3">Config Makeathon 2026</h3>
         <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
           <table>
-            <thead>
-              <tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr>
-            </thead>
+            <thead><tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr></thead>
             <tbody>
               <tr><td>Entries</td><td class="text-right">8</td><td class="text-right">103</td></tr>
               <tr><td>Avg Post Day</td><td class="text-right">Day 4.4</td><td class="text-right">Day 8.6</td></tr>
@@ -92,8 +86,8 @@ import Layout from "../layouts/Layout.astro";
         Early birds have a clear edge, but winners also appear throughout the submission window,
         suggesting quality trumps pure earliness.
       </p>
-      <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
-        <iframe src="/charts/all_timing_histogram.html" class="w-full h-[500px]" loading="lazy"></iframe>
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <TimingHistogram client:load />
       </div>
     </section>
 
@@ -102,10 +96,9 @@ import Layout from "../layouts/Layout.astro";
       <p class="text-[var(--color-text-dim)] leading-relaxed mb-4">
         Winners cross-posted to an average of 3.0 social platforms compared to 1.1 for non-winners.
         Every additional platform linked correlates with higher visibility and engagement.
-        The data suggests social amplification is a significant factor in winning.
       </p>
-      <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
-        <iframe src="/charts/all_engagement_scatter.html" class="w-full h-[500px]" loading="lazy"></iframe>
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <EngagementScatter client:load />
       </div>
     </section>
 
@@ -114,11 +107,10 @@ import Layout from "../layouts/Layout.astro";
       <p class="text-[var(--color-text-dim)] leading-relaxed mb-4">
         82.6% of winners appeared in official Contra recap posts versus 4.1% of non-winners.
         This could mean recaps influence winning perception, or that the judging panel and
-        recap writers converge on similar projects. Either way, getting featured correlates
-        heavily with winning.
+        recap writers converge on similar projects.
       </p>
-      <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
-        <iframe src="/charts/all_recap_inclusion.html" class="w-full h-[400px]" loading="lazy"></iframe>
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <RecapChart client:load />
       </div>
     </section>
 
