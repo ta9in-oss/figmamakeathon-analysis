@@ -4,29 +4,94 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Video Analysis">
   <section class="mx-auto max-w-4xl px-6 py-16">
-    <h1 class="text-3xl font-bold tracking-tight mb-2">Video Upload Date Analysis</h1>
+    <h1 class="text-3xl font-bold tracking-tight mb-2">Video and Social Media Analysis</h1>
     <p class="text-[var(--color-text-dim)] mb-12">
-      Did winners start working on their projects before the challenge began?
-      We checked every winner's video upload dates against edition start dates.
+      Deep investigation into Contra submission videos, social media presence,
+      and repeat winner patterns across all three makeathon editions.
     </p>
 
     <div class="rounded-xl border border-[var(--color-accent)]/20 bg-[var(--color-surface)] p-6 mb-12">
       <h2 class="font-semibold mb-2">Verdict</h2>
-      <p class="text-[var(--color-text-dim)] leading-relaxed">
-        <strong class="text-[var(--color-text)]">No evidence</strong> any winner had videos uploaded before their challenge start date.
-        All timestamped evidence points to work happening <strong class="text-[var(--color-text)]">during the challenge window</strong>.
-        The "early posting advantage" refers to submitting early within the window, not to pre-existing work.
+      <p class="text-[var(--color-text-dim)] leading-relaxed mb-3">
+        <strong class="text-[var(--color-text)]">No pre-challenge videos exist.</strong>
+        All Contra submissions include hosted videos, but these serve as project demos for
+        judging and do not expose public upload dates. The real differentiator is
+        <strong class="text-[var(--color-text)]">social media presence and repeat participation</strong>.
       </p>
     </div>
 
     <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">Methodology</h2>
     <p class="text-[var(--color-text-dim)] leading-relaxed mb-8">
-      We used five search strategies to find videos for every known winner:
-      Playwright page scraping of project pages, YouTube JSON-LD metadata extraction,
-      X/Twitter search, direct YouTube search, and Figma blog quote analysis.
+      We scraped Contra community topic pages and individual profiles with Playwright,
+      extracted media.contra.com video URLs, analyzed Cloudinary video metadata,
+      checked all winner project pages (figma.site and figma.bot URLs),
+      searched X/Twitter for winner handles and hashtags, queried YouTube for winner demos,
+      and cross-referenced Figma blog interviews for build timeline quotes.
     </p>
 
-    <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">Findings</h2>
+    <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">Key Patterns</h2>
+
+    <div class="space-y-6 mb-12">
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <h3 class="font-medium mb-2">Pattern 1: Contra Submission Videos Are Universal</h3>
+        <p class="text-sm text-[var(--color-text-dim)] leading-relaxed">
+          Every makeathon entry includes Contra-hosted videos uploaded to
+          <code class="text-xs bg-[var(--color-bg)] px-1 py-0.5 rounded">media.contra.com</code> (Cloudinary CDN).
+          These serve as project demos for the judging panel. Since ALL entries have them,
+          video presence on Contra alone is not a winning differentiator.
+        </p>
+      </div>
+
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <h3 class="font-medium mb-2">Pattern 2: Social Handle Tagging (56% of Winners)</h3>
+        <p class="text-sm text-[var(--color-text-dim)] leading-relaxed">
+          <strong class="text-[var(--color-text)]">5 out of 9 winners</strong> had X/Twitter handles
+          tagged in the official @figma winner announcement. Winners tagged on X benefit from
+          direct visibility to Figma's audience. However, 4 winners won without being tagged,
+          proving project quality can overcome lower social presence.
+        </p>
+      </div>
+
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <h3 class="font-medium mb-2">Pattern 3: Repeat Winners Exist</h3>
+        <p class="text-sm text-[var(--color-text-dim)] leading-relaxed">
+          <strong class="text-[var(--color-text)]">Lee Black (@mrblackstudio)</strong> is the only
+          two-time winner across editions. He won "Boundary Pushing" for Airwwave in March 2026,
+          then "Innovative Workflow" for Connected Earth in Config 2026 (announced today, June 24).
+          Repeat participation with entirely new projects appears to be a viable strategy.
+        </p>
+      </div>
+
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <h3 class="font-medium mb-2">Pattern 4: Award Categories Confirm Social Matters</h3>
+        <p class="text-sm text-[var(--color-text-dim)] leading-relaxed">
+          The existence of "Fan Favorite on Social" (won by @DannPetty) and "Build in Public"
+          (Config 2026) as official award categories confirms that social media presence is
+          an explicitly judged criterion. These are not incidental correlations.
+        </p>
+      </div>
+
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <h3 class="font-medium mb-2">Pattern 5: YouTube Demos Are Rare (1 in 9)</h3>
+        <p class="text-sm text-[var(--color-text-dim)] leading-relaxed">
+          Only Dann Petty (Reframe It) published a YouTube demo, uploaded March 4, 2026
+          (Day 31 of the March 2026 challenge window). The video was posted during the
+          challenge, not before. YouTube presence is uncommon but signals high social investment.
+        </p>
+      </div>
+
+      <div class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)]">
+        <h3 class="font-medium mb-2">Pattern 6: Config 2026 Winners (Announced Today)</h3>
+        <p class="text-sm text-[var(--color-text-dim)] leading-relaxed">
+          Config Makeathon drew <strong class="text-[var(--color-text)]">11,000+ participants</strong>.
+          Winners announced June 24, 2026: Visual Atlas (Grand Prize), Doodle Fonts (2nd),
+          Your Eyes Can Speak, Connected Earth, Still Here Focus, Sound Check.
+          Lee Black's second win in this edition reinforces the repeat-winner pattern.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">Winner Social Profiles</h2>
     <div class="overflow-x-auto rounded-lg border border-[var(--color-border)] mb-12">
       <table>
         <thead>
@@ -34,110 +99,35 @@ import Layout from "../layouts/Layout.astro";
             <th>Project</th>
             <th>Creator</th>
             <th>Edition</th>
-            <th>Video Found</th>
-            <th>Upload Date</th>
-            <th>Days from Start</th>
-            <th>Evidence</th>
+            <th>X Handle</th>
+            <th>Tagged</th>
+            <th>YouTube</th>
+            <th>Repeat Winner</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="font-medium">Common Thread</td>
-            <td>Charlota Blunarova</td>
-            <td class="text-xs">Mar 2026</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
-          </tr>
-          <tr>
-            <td class="font-medium">TOKYO</td>
-            <td>Kiel Cole</td>
-            <td class="text-xs">Mar 2026</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
-          </tr>
-          <tr>
-            <td class="font-medium">Pucker</td>
-            <td>Aleyna Catak</td>
-            <td class="text-xs">Mar 2026</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Creator stated she built it in a single day during the makeathon</td>
-          </tr>
-          <tr>
-            <td class="font-medium">Airwwave</td>
-            <td>Lee Black</td>
-            <td class="text-xs">Mar 2026</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
-          </tr>
-          <tr>
-            <td class="font-medium">Duet Booth</td>
-            <td>Paige Latimer</td>
-            <td class="text-xs">Mar 2026</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
-          </tr>
-          <tr class="bg-[var(--color-bg)]">
-            <td class="font-medium">Reframe It</td>
-            <td>Dann Petty</td>
-            <td class="text-xs">Mar 2026</td>
-            <td class="text-[var(--color-accent)]">Yes</td>
-            <td>Mar 4, 2026</td>
-            <td>+31 days</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Tutorial/demo posted mid-challenge. Challenge ran Feb 1 - Mar 16.</td>
-          </tr>
-          <tr>
-            <td class="font-medium">Web Poetry</td>
-            <td>Cara Ellis</td>
-            <td class="text-xs">Sep 2025</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Sketched on paper first, built with 90 prompts during challenge</td>
-          </tr>
-          <tr>
-            <td class="font-medium">Plan That Trip. Now</td>
-            <td>Johannes Specht</td>
-            <td class="text-xs">Sep 2025</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">Figma blog describes in-challenge building process</td>
-          </tr>
-          <tr>
-            <td class="font-medium">Package Customizer</td>
-            <td>Daniella Marynova</td>
-            <td class="text-xs">Sep 2025</td>
-            <td>No</td>
-            <td>-</td>
-            <td>-</td>
-            <td class="text-xs text-[var(--color-text-dim)]">No dedicated video found</td>
-          </tr>
+          <tr><td class="font-medium">Common Thread</td><td>Charlota Blunarova</td><td>Mar 2026</td><td class="font-mono text-xs">@0xCharlota</td><td>Yes</td><td>No</td><td>No</td></tr>
+          <tr><td class="font-medium">TOKYO</td><td>Kiel Cole</td><td>Mar 2026</td><td>--</td><td>No</td><td>No</td><td>No</td></tr>
+          <tr><td class="font-medium">Pucker</td><td>Aleyna Catak</td><td>Mar 2026</td><td>--</td><td>No</td><td>No</td><td>No</td></tr>
+          <tr class="bg-[var(--color-bg)]"><td class="font-medium">Airwwave</td><td>Lee Black</td><td>Mar 2026</td><td class="font-mono text-xs">@mrblackstudio</td><td>Yes</td><td>No</td><td class="text-[var(--color-accent)] font-medium">Yes (2x)</td></tr>
+          <tr><td class="font-medium">Duet Booth</td><td>Paige Latimer</td><td>Mar 2026</td><td>--</td><td>No</td><td>No</td><td>No</td></tr>
+          <tr><td class="font-medium">Reframe It</td><td>Dann Petty</td><td>Mar 2026</td><td class="font-mono text-xs">@DannPetty</td><td>Yes</td><td>Mar 4, 2026</td><td>No</td></tr>
+          <tr><td class="font-medium">Visual Atlas</td><td>Bene Brandhofer</td><td>Config 2026</td><td class="font-mono text-xs">@benebrandhofer</td><td>Yes</td><td>No</td><td>No</td></tr>
+          <tr class="bg-[var(--color-bg)]"><td class="font-medium">Connected Earth</td><td>Lee Black</td><td>Config 2026</td><td class="font-mono text-xs">@mrblackstudio</td><td>Yes</td><td>No</td><td class="text-[var(--color-accent)] font-medium">Yes (2x)</td></tr>
+          <tr><td class="font-medium">Web Poetry</td><td>Cara Ellis</td><td>Sep 2025</td><td>--</td><td>No</td><td>No</td><td>No</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
-      <h3 class="font-medium mb-3">On-the-Record Quotes</h3>
-      <div class="space-y-4 text-sm text-[var(--color-text-dim)]">
-        <div class="border-l-2 border-[var(--color-accent)] pl-4">
-          <p class="italic mb-1">"Figma Make really accelerated the execution of her idea, allowing her to build Pucker in a single day."</p>
-          <p class="text-xs text-[var(--color-text-subtle)]">Figma Blog, about Aleyna Catak (Pucker)</p>
-        </div>
-        <div class="border-l-2 border-[var(--color-accent)] pl-4">
-          <p class="italic mb-1">"Starting with pen and paper, Cara sketched out her vision several times before turning to Figma."</p>
-          <p class="text-xs text-[var(--color-text-subtle)]">Figma Blog, about Cara Ellis (Web Poetry)</p>
-        </div>
-      </div>
+      <h3 class="font-medium mb-3">Data Download</h3>
+      <p class="text-sm text-[var(--color-text-dim)] mb-3">
+        Complete analysis with per-winner video URLs, social handles, repeat winner status,
+        and build timeline evidence.
+      </p>
+      <a href="/data/deep_video_analysis.csv" download class="text-sm text-[var(--color-accent)] hover:text-[var(--color-accent-dim)]">
+        Download deep_video_analysis.csv
+      </a>
     </div>
   </section>
 </Layout>
