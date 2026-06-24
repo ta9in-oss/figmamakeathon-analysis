@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import type { CalculateMetadataFunction } from "remotion";
 import { layout16x9, layout9x16 } from "./constants/layout";
 import { MainSequence } from "./scenes/MainSequence";
 import { loadFont } from "@remotion/google-fonts/Inter";
@@ -9,12 +10,19 @@ const { waitUntilDone } = loadFont("normal", {
   weights: ["400", "500", "600"],
 });
 
+const calculateMetadata: CalculateMetadataFunction<Record<string, unknown>> =
+  async () => {
+    await waitUntilDone();
+    return {};
+  };
+
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
         id="MakeathonStory16x9"
         component={() => <MainSequence layout={layout16x9} />}
+        calculateMetadata={calculateMetadata}
         durationInFrames={1605}
         fps={30}
         width={1920}
@@ -23,6 +31,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="MakeathonStory9x16"
         component={() => <MainSequence layout={layout9x16} />}
+        calculateMetadata={calculateMetadata}
         durationInFrames={1605}
         fps={30}
         width={1080}
