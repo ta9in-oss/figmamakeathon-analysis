@@ -43,7 +43,7 @@ export async function loadCSV(): Promise<Entry[]> {
   });
 }
 
-export function winnerColor() { return '#7C3AED'; }           /* Figma Purple */
-export function nonWinnerColor() { return '#D4D4D8'; }        /* Muted gray */
-export function accentColor() { return '#1ABCFE'; }            /* Figma Blue */
-export function gridColor() { return '#E5E5E5'; }             /* Border */
+export function winnerColor() { return '#1a1a1a'; }           /* Black */
+export function nonWinnerColor() { return '#d4d4d8'; }        /* Light gray */
+export function accentColor() { return '#52525b'; }            /* Slate */
+export function gridColor() { return '#e5e5e5'; }             /* Border */

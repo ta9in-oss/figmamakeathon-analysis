@@ -6,16 +6,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* ── Figma x Contra Unified Design Tokens ──────────────────────────
-   Primary:   Figma Purple   #7C3AED  oklch(0.55 0.24 280)
-   Secondary: Contra Lime    #CFFF4D  oklch(0.92 0.18 120)
-   Accent:    Figma Blue     #1ABCFE  oklch(0.65 0.15 230)
-   Chart:     Figma palette — Purple, Blue, Green, Orange, Coral
-   Typography: Inter (Figma) + Geist (system) 
-   Radius:    0.75rem (12px) — between Figma 8-12px
-   Spacing:   4px grid
-   ────────────────────────────────────────────────────────────────── */
-
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: 'Inter', 'Geist Variable', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -37,13 +27,13 @@
   --color-border: var(--border);
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent); /* Figma Blue */
+  --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary); /* Contra Lime */
+  --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary); /* Figma Purple */
+  --color-primary: var(--primary);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -59,120 +49,78 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* ── Light Theme (Figma x Contra) ──────────────────────────────── */
 :root {
   --radius: 0.75rem;
-  
-  /* Surfaces */
-  --background: oklch(0.985 0 0);        /* #FAFAFA — Contra off-white */
-  --foreground: oklch(0.12 0 0);          /* #171717 — Near-black */
-  --card: oklch(1 0 0);                    /* #FFFFFF — Pure white */
-  --card-foreground: oklch(0.12 0 0);
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.15 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.12 0 0);
-  
-  /* Primary: Figma Purple */
-  --primary: oklch(0.55 0.24 280);        /* #7C3AED */
-  --primary-foreground: oklch(0.99 0 0);   /* White text on purple */
-  
-  /* Secondary: Contra Lime */
-  --secondary: oklch(0.95 0.18 120);       /* Soft lime bg */
-  --secondary-foreground: oklch(0.2 0 0);  /* Dark text on lime */
-  
-  /* Muted */
-  --muted: oklch(0.965 0 0);              /* #F5F5F5 */
-  --muted-foreground: oklch(0.4 0 0);     /* #666666 */
-  
-  /* Accent: Figma Blue */
-  --accent: oklch(0.65 0.15 230);         /* #1ABCFE */
-  --accent-foreground: oklch(0.99 0 0);
-  
-  /* Borders & Inputs */
-  --border: oklch(0.9 0 0);               /* #E5E5E5 */
+  --popover-foreground: oklch(0.15 0 0);
+  --primary: oklch(0.15 0 0);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.95 0 0);
+  --secondary-foreground: oklch(0.15 0 0);
+  --muted: oklch(0.965 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.93 0.005 260);
+  --accent-foreground: oklch(0.15 0 0);
+  --border: oklch(0.9 0 0);
   --input: oklch(0.9 0 0);
-  --ring: oklch(0.55 0.24 280);           /* Figma Purple focus ring */
-  
-  /* Destructive */
-  --destructive: oklch(0.55 0.25 25);     /* Figma Orange */
-  
-  /* Charts: Figma Brand Palette */
-  --chart-1: oklch(0.55 0.24 280);        /* Purple #7C3AED */
-  --chart-2: oklch(0.65 0.15 230);        /* Blue #1ABCFE */
-  --chart-3: oklch(0.65 0.17 160);        /* Green #0ACF83 */
-  --chart-4: oklch(0.62 0.21 35);         /* Orange #F24E1E */
-  --chart-5: oklch(0.65 0.18 25);         /* Coral #FF7262 */
-  
-  /* Sidebar */
+  --ring: oklch(0.15 0 0);
+  --destructive: oklch(0.55 0.2 25);
+  --chart-1: oklch(0.15 0 0);
+  --chart-2: oklch(0.45 0.02 260);
+  --chart-3: oklch(0.65 0 0);
+  --chart-4: oklch(0.8 0 0);
+  --chart-5: oklch(0.92 0 0);
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.12 0 0);
-  --sidebar-primary: oklch(0.55 0.24 280);
+  --sidebar-foreground: oklch(0.15 0 0);
+  --sidebar-primary: oklch(0.15 0 0);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.965 0 0);
-  --sidebar-accent-foreground: oklch(0.12 0 0);
+  --sidebar-accent: oklch(0.95 0 0);
+  --sidebar-accent-foreground: oklch(0.15 0 0);
   --sidebar-border: oklch(0.9 0 0);
-  --sidebar-ring: oklch(0.55 0.24 280);
+  --sidebar-ring: oklch(0.15 0 0);
 }
 
-/* ── Dark Theme (Contra-inspired) ───────────────────────────────── */
 .dark {
   --radius: 0.75rem;
-  
-  /* Surfaces */
-  --background: oklch(0.12 0 0);           /* #171717 — Contra dark */
-  --foreground: oklch(0.95 0 0);           /* Near-white */
-  --card: oklch(0.16 0 0);                 /* #222222 */
+  --background: oklch(0.15 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.18 0 0);
   --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.16 0 0);
+  --popover: oklch(0.18 0 0);
   --popover-foreground: oklch(0.95 0 0);
-  
-  /* Primary: Figma Purple (brighter for dark) */
-  --primary: oklch(0.62 0.22 280);         /* #A259FF */
-  --primary-foreground: oklch(0.12 0 0);   /* Dark text on lighter purple */
-  
-  /* Secondary: Contra Lime */
-  --secondary: oklch(0.92 0.18 120);
-  --secondary-foreground: oklch(0.12 0 0);
-  
-  /* Muted */
+  --primary: oklch(0.95 0 0);
+  --primary-foreground: oklch(0.15 0 0);
+  --secondary: oklch(0.22 0 0);
+  --secondary-foreground: oklch(0.95 0 0);
   --muted: oklch(0.22 0 0);
   --muted-foreground: oklch(0.6 0 0);
-  
-  /* Accent: Figma Blue */
-  --accent: oklch(0.7 0.14 230);
-  --accent-foreground: oklch(0.12 0 0);
-  
-  /* Borders */
+  --accent: oklch(0.25 0.01 260);
+  --accent-foreground: oklch(0.95 0 0);
   --border: oklch(0.28 0 0);
   --input: oklch(0.28 0 0);
-  --ring: oklch(0.62 0.22 280);
-  
-  /* Destructive */
-  --destructive: oklch(0.6 0.25 25);
-  
-  /* Charts: Figma Brand Palette (brighter for dark backgrounds) */
-  --chart-1: oklch(0.62 0.22 280);
-  --chart-2: oklch(0.7 0.14 230);
-  --chart-3: oklch(0.7 0.16 160);
-  --chart-4: oklch(0.68 0.2 35);
-  --chart-5: oklch(0.7 0.17 25);
-  
-  /* Sidebar */
-  --sidebar: oklch(0.16 0 0);
+  --ring: oklch(0.95 0 0);
+  --destructive: oklch(0.6 0.22 25);
+  --chart-1: oklch(0.95 0 0);
+  --chart-2: oklch(0.65 0.02 260);
+  --chart-3: oklch(0.55 0 0);
+  --chart-4: oklch(0.4 0 0);
+  --chart-5: oklch(0.28 0 0);
+  --sidebar: oklch(0.18 0 0);
   --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.62 0.22 280);
-  --sidebar-primary-foreground: oklch(0.12 0 0);
+  --sidebar-primary: oklch(0.95 0 0);
+  --sidebar-primary-foreground: oklch(0.15 0 0);
   --sidebar-accent: oklch(0.22 0 0);
   --sidebar-accent-foreground: oklch(0.95 0 0);
   --sidebar-border: oklch(0.28 0 0);
-  --sidebar-ring: oklch(0.62 0.22 280);
+  --sidebar-ring: oklch(0.95 0 0);
 }
 
-/* ── Custom Utilities ───────────────────────────────────────────── */
-
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
+  * { @apply border-border outline-ring/50; }
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', 'Geist Variable', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -180,51 +128,19 @@
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: -0.011em;
   }
-  html {
-    @apply font-sans;
-  }
+  html { @apply font-sans; }
 }
 
-::selection {
-  background: var(--primary);
-  color: var(--primary-foreground);
-}
+::selection { background: var(--foreground); color: var(--background); }
+a { color: inherit; text-decoration: none; transition: opacity 0.2s ease; }
+a:hover { opacity: 0.7; }
 
-a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-a:hover {
-  opacity: 0.85;
-}
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+th { color: var(--muted-foreground); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; }
+td { font-size: 0.9375rem; }
+hr { border: none; border-top: 1px solid var(--border); }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 0.75rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-}
-th {
-  color: var(--muted-foreground);
-  font-weight: 600;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-td {
-  font-size: 0.9375rem;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-}
-
-/* ── Animations ─────────────────────────────────────────────────── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
@@ -234,25 +150,20 @@ hr {
   to { opacity: 1; }
 }
 
-.animate-in {
-  animation: fadeInUp 0.6s ease-out both;
-}
+.animate-in { animation: fadeInUp 0.6s ease-out both; }
 .animate-in-delay-1 { animation-delay: 0.1s; }
 .animate-in-delay-2 { animation-delay: 0.2s; }
 .animate-in-delay-3 { animation-delay: 0.3s; }
 .animate-in-delay-4 { animation-delay: 0.4s; }
-
-.fade-in {
-  animation: fadeIn 0.5s ease-out both;
-}
+.fade-in { animation: fadeIn 0.5s ease-out both; }
 
 .card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-  border-color: var(--primary);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  border-color: var(--foreground);
 }
 
 .stat-number {
