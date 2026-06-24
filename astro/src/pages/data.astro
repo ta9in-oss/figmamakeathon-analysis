@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Data">
+  <section class="mx-auto max-w-4xl px-6 py-16">
+    <h1 class="text-3xl font-bold tracking-tight mb-2">Raw Data</h1>
+    <p class="text-[var(--color-text-dim)] mb-12">Download the complete datasets used in this analysis.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+      <a href="/data/all_entries.csv" download class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-[var(--color-accent)] transition-colors">All Entries</h3>
+        <p class="text-sm text-[var(--color-text-dim)]">Complete catalog of 318 scraped entries across all editions. Includes engagement metrics, social data, and winner flags.</p>
+        <p class="text-xs text-[var(--color-text-subtle)] mt-3">all_entries.csv</p>
+      </a>
+      <a href="/data/winners.csv" download class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-[var(--color-accent)] transition-colors">Winners</h3>
+        <p class="text-sm text-[var(--color-text-dim)]">Detailed metadata for 23 winners including project URLs, social presence, and recap inclusion.</p>
+        <p class="text-xs text-[var(--color-text-subtle)] mt-3">winners.csv</p>
+      </a>
+      <a href="/data/video_analysis.csv" download class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-[var(--color-accent)] transition-colors">Video Analysis</h3>
+        <p class="text-sm text-[var(--color-text-dim)]">Upload date analysis for winner videos. Compares video dates against challenge start dates.</p>
+        <p class="text-xs text-[var(--color-text-subtle)] mt-3">video_analysis.csv</p>
+      </a>
+      <a href="/charts/" class="rounded-xl border border-[var(--color-border)] p-6 bg-[var(--color-surface)] hover:border-[var(--color-accent)] transition-colors group">
+        <h3 class="font-medium mb-2 group-hover:text-[var(--color-accent)] transition-colors">Interactive Charts</h3>
+        <p class="text-sm text-[var(--color-text-dim)]">Four interactive plotly charts: timing histogram, engagement scatter, comparison boxplots, and recap inclusion.</p>
+        <p class="text-xs text-[var(--color-text-subtle)] mt-3">View charts</p>
+      </a>
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4">Data Schema</h2>
+    <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
+      <table>
+        <thead>
+          <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="font-mono text-xs">edition</td><td>string</td><td>Makeathon edition name</td></tr>
+          <tr><td class="font-mono text-xs">entry_id</td><td>string</td><td>Unique entry identifier</td></tr>
+          <tr><td class="font-mono text-xs">contra_url</td><td>string</td><td>Contra community post URL</td></tr>
+          <tr><td class="font-mono text-xs">posted_at</td><td>datetime</td><td>Post timestamp (ISO 8601)</td></tr>
+          <tr><td class="font-mono text-xs">day_relative_to_open</td><td>int</td><td>Day number within submission window</td></tr>
+          <tr><td class="font-mono text-xs">days_before_deadline</td><td>int</td><td>Days remaining before window closed</td></tr>
+          <tr><td class="font-mono text-xs">project_title</td><td>string</td><td>Project name</td></tr>
+          <tr><td class="font-mono text-xs">creator_name</td><td>string</td><td>Creator display name</td></tr>
+          <tr><td class="font-mono text-xs">likes</td><td>int</td><td>Post like count</td></tr>
+          <tr><td class="font-mono text-xs">comments</td><td>int</td><td>Post comment count</td></tr>
+          <tr><td class="font-mono text-xs">engagement_score</td><td>float</td><td>likes + (comments x 2)</td></tr>
+          <tr><td class="font-mono text-xs">winner</td><td>bool</td><td>Whether this entry won</td></tr>
+          <tr><td class="font-mono text-xs">winner_category</td><td>string</td><td>Prize category if won</td></tr>
+          <tr><td class="font-mono text-xs">social_platforms_count</td><td>int</td><td>Number of social platforms cross-posted</td></tr>
+          <tr><td class="font-mono text-xs">in_contra_recap</td><td>bool</td><td>Featured in Contra community recap</td></tr>
+          <tr><td class="font-mono text-xs">in_figma_blog</td><td>bool</td><td>Featured in Figma blog post</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

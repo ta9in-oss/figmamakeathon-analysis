@@ -1,0 +1,10 @@
+python/venv/
+python/__pycache__/
+python/src/__pycache__/
+python/*.pyc
+astro/dist/
+astro/node_modules/
+astro/.astro/
+.DS_Store
+*.pyc
+__pycache__/

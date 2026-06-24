@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/refcell/mcp-config-schema/main/schema.json",
+  "mcpServers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anthropic/mcp-server-playwright"
+      ],
+      "tools": ["*"],
+      "description": "Browser automation for scraping JavaScript-rendered Contra community pages"
+    }
+  }
+}

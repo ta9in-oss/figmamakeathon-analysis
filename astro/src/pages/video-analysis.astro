@@ -1,0 +1,143 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Video Analysis">
+  <section class="mx-auto max-w-4xl px-6 py-16">
+    <h1 class="text-3xl font-bold tracking-tight mb-2">Video Upload Date Analysis</h1>
+    <p class="text-[var(--color-text-dim)] mb-12">
+      Did winners start working on their projects before the challenge began?
+      We checked every winner's video upload dates against edition start dates.
+    </p>
+
+    <div class="rounded-xl border border-[var(--color-accent)]/20 bg-[var(--color-surface)] p-6 mb-12">
+      <h2 class="font-semibold mb-2">Verdict</h2>
+      <p class="text-[var(--color-text-dim)] leading-relaxed">
+        <strong class="text-[var(--color-text)]">No evidence</strong> any winner had videos uploaded before their challenge start date.
+        All timestamped evidence points to work happening <strong class="text-[var(--color-text)]">during the challenge window</strong>.
+        The "early posting advantage" refers to submitting early within the window, not to pre-existing work.
+      </p>
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">Methodology</h2>
+    <p class="text-[var(--color-text-dim)] leading-relaxed mb-8">
+      We used five search strategies to find videos for every known winner:
+      Playwright page scraping of project pages, YouTube JSON-LD metadata extraction,
+      X/Twitter search, direct YouTube search, and Figma blog quote analysis.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">Findings</h2>
+    <div class="overflow-x-auto rounded-lg border border-[var(--color-border)] mb-12">
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Creator</th>
+            <th>Edition</th>
+            <th>Video Found</th>
+            <th>Upload Date</th>
+            <th>Days from Start</th>
+            <th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="font-medium">Common Thread</td>
+            <td>Charlota Blunarova</td>
+            <td class="text-xs">Mar 2026</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
+          </tr>
+          <tr>
+            <td class="font-medium">TOKYO</td>
+            <td>Kiel Cole</td>
+            <td class="text-xs">Mar 2026</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Pucker</td>
+            <td>Aleyna Catak</td>
+            <td class="text-xs">Mar 2026</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Creator stated she built it in a single day during the makeathon</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Airwwave</td>
+            <td>Lee Black</td>
+            <td class="text-xs">Mar 2026</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Duet Booth</td>
+            <td>Paige Latimer</td>
+            <td class="text-xs">Mar 2026</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Interactive figma.site prototype only</td>
+          </tr>
+          <tr class="bg-[var(--color-bg)]">
+            <td class="font-medium">Reframe It</td>
+            <td>Dann Petty</td>
+            <td class="text-xs">Mar 2026</td>
+            <td class="text-[var(--color-accent)]">Yes</td>
+            <td>Mar 4, 2026</td>
+            <td>+31 days</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Tutorial/demo posted mid-challenge. Challenge ran Feb 1 - Mar 16.</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Web Poetry</td>
+            <td>Cara Ellis</td>
+            <td class="text-xs">Sep 2025</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Sketched on paper first, built with 90 prompts during challenge</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Plan That Trip. Now</td>
+            <td>Johannes Specht</td>
+            <td class="text-xs">Sep 2025</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">Figma blog describes in-challenge building process</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Package Customizer</td>
+            <td>Daniella Marynova</td>
+            <td class="text-xs">Sep 2025</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="text-xs text-[var(--color-text-dim)]">No dedicated video found</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
+      <h3 class="font-medium mb-3">On-the-Record Quotes</h3>
+      <div class="space-y-4 text-sm text-[var(--color-text-dim)]">
+        <div class="border-l-2 border-[var(--color-accent)] pl-4">
+          <p class="italic mb-1">"Figma Make really accelerated the execution of her idea, allowing her to build Pucker in a single day."</p>
+          <p class="text-xs text-[var(--color-text-subtle)]">Figma Blog, about Aleyna Catak (Pucker)</p>
+        </div>
+        <div class="border-l-2 border-[var(--color-accent)] pl-4">
+          <p class="italic mb-1">"Starting with pen and paper, Cara sketched out her vision several times before turning to Figma."</p>
+          <p class="text-xs text-[var(--color-text-subtle)]">Figma Blog, about Cara Ellis (Web Poetry)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

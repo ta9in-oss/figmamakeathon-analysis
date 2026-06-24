@@ -1,0 +1,139 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Report">
+  <article class="mx-auto max-w-3xl px-6 py-16">
+    <header class="mb-16">
+      <h1 class="text-3xl font-bold tracking-tight mb-4">What Separates Winners from Everyone Else?</h1>
+      <p class="text-[var(--color-text-dim)]">A data-backed community report — June 2026</p>
+    </header>
+
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">The Pattern</h2>
+      <p class="text-[var(--color-text-dim)] leading-relaxed mb-4">
+        After analyzing 318 entries across 3 makeathon editions, a clear pattern emerges.
+        Early posting correlates with winning, but it is not the whole story. Winners also tend to have:
+      </p>
+      <ul class="space-y-2 text-[var(--color-text-dim)] ml-4">
+        <li>Higher engagement scores — <strong class="text-[var(--color-text)]">8.7x</strong> the non-winner average</li>
+        <li>Greater social cross-platform presence — <strong class="text-[var(--color-text)]">3.0 vs 1.1</strong> platforms</li>
+        <li>Higher likelihood of being featured in official recaps — <strong class="text-[var(--color-text)]">82.6% vs 4.1%</strong></li>
+        <li>Stronger video presence — <strong class="text-[var(--color-text)]">95.7% vs 46.4%</strong></li>
+      </ul>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold mb-6 text-[var(--color-accent)]">Edition-by-Edition Breakdown</h2>
+
+      <div class="mb-10">
+        <h3 class="font-medium mb-3">Figma Make-a-thon (Sep 2025)</h3>
+        <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
+          <table>
+            <thead>
+              <tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Entries</td><td class="text-right">8</td><td class="text-right">104</td></tr>
+              <tr><td>Avg Post Day</td><td class="text-right">Day 1.2</td><td class="text-right">Day 4.3</td></tr>
+              <tr><td>Avg Engagement</td><td class="text-right">874</td><td class="text-right">83</td></tr>
+              <tr><td>Avg Social Platforms</td><td class="text-right">3.0</td><td class="text-right">1.2</td></tr>
+              <tr><td>Recap Inclusion</td><td class="text-right">88%</td><td class="text-right">4%</td></tr>
+              <tr><td>Video Presence</td><td class="text-right">100%</td><td class="text-right">50%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="font-medium mb-3">Figma Makeathon March 2026</h3>
+        <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
+          <table>
+            <thead>
+              <tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Entries</td><td class="text-right">7</td><td class="text-right">88</td></tr>
+              <tr><td>Avg Post Day</td><td class="text-right">Day 8.0</td><td class="text-right">Day 23.9</td></tr>
+              <tr><td>Avg Engagement</td><td class="text-right">855</td><td class="text-right">95</td></tr>
+              <tr><td>Avg Social Platforms</td><td class="text-right">2.7</td><td class="text-right">1.1</td></tr>
+              <tr><td>Recap Inclusion</td><td class="text-right">86%</td><td class="text-right">3%</td></tr>
+              <tr><td>Video Presence</td><td class="text-right">100%</td><td class="text-right">48%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <h3 class="font-medium mb-3">Config Makeathon 2026</h3>
+        <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
+          <table>
+            <thead>
+              <tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Entries</td><td class="text-right">8</td><td class="text-right">103</td></tr>
+              <tr><td>Avg Post Day</td><td class="text-right">Day 4.4</td><td class="text-right">Day 8.6</td></tr>
+              <tr><td>Avg Engagement</td><td class="text-right">601</td><td class="text-right">91</td></tr>
+              <tr><td>Avg Social Platforms</td><td class="text-right">3.1</td><td class="text-right">1.1</td></tr>
+              <tr><td>Recap Inclusion</td><td class="text-right">75%</td><td class="text-right">5%</td></tr>
+              <tr><td>Video Presence</td><td class="text-right">88%</td><td class="text-right">42%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">The Timing Effect</h2>
+      <p class="text-[var(--color-text-dim)] leading-relaxed mb-4">
+        Winners posted on average <strong class="text-[var(--color-text)]">Day 4.4</strong> of the submission window,
+        compared to <strong class="text-[var(--color-text)]">Day 11.7</strong> for non-winners. That is a 7.3-day advantage.
+        Early birds have a clear edge, but winners also appear throughout the submission window,
+        suggesting quality trumps pure earliness.
+      </p>
+      <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
+        <iframe src="/charts/all_timing_histogram.html" class="w-full h-[500px]" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">The Social Multiplier</h2>
+      <p class="text-[var(--color-text-dim)] leading-relaxed mb-4">
+        Winners cross-posted to an average of 3.0 social platforms compared to 1.1 for non-winners.
+        Every additional platform linked correlates with higher visibility and engagement.
+        The data suggests social amplification is a significant factor in winning.
+      </p>
+      <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
+        <iframe src="/charts/all_engagement_scatter.html" class="w-full h-[500px]" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">The Recap Game</h2>
+      <p class="text-[var(--color-text-dim)] leading-relaxed mb-4">
+        82.6% of winners appeared in official Contra recap posts versus 4.1% of non-winners.
+        This could mean recaps influence winning perception, or that the judging panel and
+        recap writers converge on similar projects. Either way, getting featured correlates
+        heavily with winning.
+      </p>
+      <div class="rounded-xl border border-[var(--color-border)] overflow-hidden">
+        <iframe src="/charts/all_recap_inclusion.html" class="w-full h-[400px]" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold mb-4 text-[var(--color-accent)]">What This Means for You</h2>
+      <p class="text-[var(--color-text-dim)] leading-relaxed mb-4">
+        If you are entering the next Figma x Contra makeathon:
+      </p>
+      <ol class="space-y-3 text-[var(--color-text-dim)] ml-4 list-decimal">
+        <li><strong class="text-[var(--color-text)]">Post early</strong> — early entries accumulate more engagement and visibility over time</li>
+        <li><strong class="text-[var(--color-text)]">Cross-post everywhere</strong> — each platform adds a multiplier effect</li>
+        <li><strong class="text-[var(--color-text)]">Include a video</strong> — video presence correlates with higher engagement</li>
+        <li><strong class="text-[var(--color-text)]">Build in public</strong> — share your process, not just the final result</li>
+        <li><strong class="text-[var(--color-text)]">Engage with the community</strong> — likes and comments create a feedback loop</li>
+      </ol>
+    </section>
+  </article>
+</Layout>
