@@ -1,6 +1,5 @@
 import React from "react";
-import { OffthreadVideo } from "@remotion/media";
-import { staticFile } from "remotion";
+import { OffthreadVideo, staticFile } from "remotion";
 
 export const OffthreadVideoClip: React.FC<{
   src: string;
