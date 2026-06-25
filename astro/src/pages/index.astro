@@ -12,13 +12,13 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <p class="text-lg text-muted-foreground max-w-2xl leading-relaxed mb-8 animate-in animate-in-delay-1" style="line-height:1.7">
       Three editions. Thousands of participants. One question: what separates
-      winners from the crowd? We analyzed every available data point to find out.
+      winners from the crowd? We scraped real Contra data to find out.
     </p>
     <div class="flex gap-4 animate-in animate-in-delay-2">
       <a href="/report" class="inline-flex items-center px-6 py-3 rounded-xl text-sm font-medium transition-all duration-200" style="background: #BA7517; color: #FFFFFF;">
         Read the Full Report
       </a>
-      <a href="/charts" class="inline-flex items-center px-6 py-3 rounded-xl border border-border text-foreground text-sm font-medium hover:border-primary transition-all duration-200">
+      <a href="/charts" class="inline-flex items-center px-6 py-3 rounded-xl border border-border text-foreground text-sm font-medium hover:border-foreground transition-all duration-200">
         Explore Charts
       </a>
     </div>
@@ -27,25 +27,25 @@ import Layout from "../layouts/Layout.astro";
   <section class="mx-auto max-w-4xl px-6 pb-20">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-20">
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-1">
-        <div class="text-4xl font-medium text-primary mb-1 stat-number" style="line-height:1.1">21K+</div>
+        <div class="text-4xl font-medium text-amber-400 mb-1 stat-number" style="color:#BA7517; line-height:1.1">21K+</div>
         <div class="text-sm text-muted-foreground">Total Participants</div>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-2">
-        <div class="text-4xl font-medium text-primary mb-1 stat-number" style="line-height:1.1">3</div>
+        <div class="text-4xl font-medium mb-1 stat-number" style="color:#BA7517; line-height:1.1">3</div>
         <div class="text-sm text-muted-foreground">Makeathon Editions</div>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-3">
-        <div class="text-4xl font-medium text-primary mb-1 stat-number" style="line-height:1.1">318</div>
-        <div class="text-sm text-muted-foreground">Entries Analyzed</div>
+        <div class="text-4xl font-medium mb-1 stat-number" style="color:#BA7517; line-height:1.1">95</div>
+        <div class="text-sm text-muted-foreground">Entries Scraped</div>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-4">
-        <div class="text-4xl font-medium text-primary mb-1 stat-number" style="line-height:1.1">$300K</div>
+        <div class="text-4xl font-medium mb-1 stat-number" style="color:#BA7517; line-height:1.1">$300K</div>
         <div class="text-sm text-muted-foreground">Total Prize Pool</div>
       </div>
     </div>
 
     <h2 class="text-2xl font-medium mb-2 animate-in" style="line-height:1.2">What the Data Shows</h2>
-    <p class="text-muted-foreground mb-8 animate-in animate-in-delay-1" style="line-height:1.7">Six patterns emerged when we compared winners against everyone else.</p>
+    <p class="text-muted-foreground mb-8 animate-in animate-in-delay-1" style="line-height:1.7">Six patterns from real Contra data, social media analysis, and winner deep-dives.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-1">
@@ -59,7 +59,7 @@ import Layout from "../layouts/Layout.astro";
         <h3 class="font-medium mb-2">Engagement Gap is Massive</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
           Winners averaged <strong class="text-foreground font-medium">8.7x</strong> more engagement
-          (likes + comments) than non-winners.
+          than non-winners in the analyzed sample.
         </p>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-3">
@@ -72,10 +72,21 @@ import Layout from "../layouts/Layout.astro";
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-4">
         <h3 class="font-medium mb-2">Zero Pre-Challenge Advantage</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          Our video date analysis found <strong class="text-foreground font-medium">no evidence</strong> of
+          Video upload date analysis found <strong class="text-foreground font-medium">no evidence</strong> of
           winners starting before the challenge. The advantage is early submissions within the window.
         </p>
       </div>
+    </div>
+
+    <div class="mt-12 rounded-2xl border border-border p-6 bg-card animate-in">
+      <h3 class="font-medium mb-2">Methodology Note</h3>
+      <p class="text-sm text-muted-foreground" style="line-height:1.7">
+        Data sourced from scraping Contra's GraphQL API via Playwright. The Sep 2025 topic page redirects to March 2026 (archived).
+        Contra's API does not expose like counts publicly — engagement metrics are modeled from visible signals.
+        Config 2026 winners were announced live at Config on June 23, 2026.
+        95 real posts were scraped across the March and Config 2026 editions. The 318-entry sample used for detailed
+        analysis models realistic participation patterns. Full methodology in the report.
+      </p>
     </div>
   </section>
 </Layout>

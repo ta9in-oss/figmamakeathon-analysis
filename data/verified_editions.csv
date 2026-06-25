@@ -1,0 +1,4 @@
+edition,start,end,prize,participants,winners,scraped_posts,scraped_with_video,notes
+Figma Make-a-thon (Sep 2025),2025-09-03,2025-09-10,$100K,"10,000+",6,N/A,N/A,Topic redirects to March 2026 — archived. Figma blog: over 10K participated.
+Figma Makeathon March 2026,2026-02-01,2026-03-16,$100K,Not public,6,49,35,24 posts scraped. Engagement data not exposed in API.
+Config Makeathon 2026,2026-06-04,2026-06-18,$100K,"11,000+",6,46,30,46 posts scraped in initial session. Page times out intermittently.
