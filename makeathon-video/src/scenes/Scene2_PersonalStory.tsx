@@ -6,28 +6,41 @@ import {
 } from "remotion";
 import { colors } from "../constants/colors";
 import type { Layout } from "../constants/layout";
-import { countUp, opacityIn } from "../components/animations";
+import { countUp, opacityIn, pushIn } from "../components/animations";
 import { OffthreadVideoClip } from "../components/OffthreadVideoClip";
 
 const Act: React.FC<{
   children: React.ReactNode;
   layout: Layout;
   video?: React.ReactNode;
-}> = ({ children, layout, video }) => (
-  <AbsoluteFill
-    style={{
-      backgroundColor: colors.bg,
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      padding: `0 ${layout.padding}px`,
-      fontFamily: '"Inter", sans-serif',
-    }}
-  >
-    {video}
-    <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
-  </AbsoluteFill>
-);
+}> = ({ children, layout, video }) => {
+  const frame = useCurrentFrame();
+  const scale = pushIn(frame, 130, 1, 1.05);
+  return (
+    <AbsoluteFill
+      style={{
+        backgroundColor: colors.bg,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        padding: `0 ${layout.padding}px`,
+        fontFamily: '"Inter", sans-serif',
+      }}
+    >
+      {video}
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          transform: `scale(${scale})`,
+          transformOrigin: "left center",
+        }}
+      >
+        {children}
+      </div>
+    </AbsoluteFill>
+  );
+};
 
 const Line: React.FC<{
   text: string;
@@ -198,10 +211,11 @@ export const Scene2_PersonalStory: React.FC<{ layout: Layout }> = ({
           <div
             style={{
               opacity: opacityIn(frame, 30),
-              fontSize: layout.titleSize * 0.9,
+              fontSize: layout.titleSize * 0.95,
               fontWeight: 600,
               color: colors.red,
               lineHeight: 1.2,
+              textShadow: "0 0 50px rgba(224,92,59,0.45)",
             }}
           >
             But I didn't win.
@@ -219,6 +233,7 @@ export const Scene2_PersonalStory: React.FC<{ layout: Layout }> = ({
                 fontWeight: 600,
                 color: colors.amber,
                 lineHeight: 1,
+                textShadow: "0 0 60px rgba(239,159,39,0.45)",
               }}
             >
               {countUp(frame, 0, 20, 1)}

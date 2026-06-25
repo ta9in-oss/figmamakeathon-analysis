@@ -8,7 +8,11 @@ import {
   opacityIn,
   barGrow,
   springIn,
+  pushIn,
 } from "../components/animations";
+
+const amberGlow = "0 0 60px rgba(239,159,39,0.45)";
+const tealGlow = "0 0 60px rgba(29,158,117,0.4)";
 
 export const Scene4_Data: React.FC<{ layout: Layout }> = ({ layout }) => {
   return (
@@ -23,7 +27,7 @@ export const Scene4_Data: React.FC<{ layout: Layout }> = ({ layout }) => {
         <DataCrossposting layout={layout} />
       </Sequence>
       <Sequence from={480} durationInFrames={120}>
-        <DataVideoDates layout={layout} />
+        <DataRecap layout={layout} />
       </Sequence>
     </>
   );
@@ -31,6 +35,8 @@ export const Scene4_Data: React.FC<{ layout: Layout }> = ({ layout }) => {
 
 const DataTiming: React.FC<{ layout: Layout }> = ({ layout }) => {
   const frame = useCurrentFrame();
+  const scale = pushIn(frame, 180, 1, 1.05);
+  const labelWidth = layout.bodySize * 2.8;
   return (
     <AbsoluteFill
       style={{
@@ -40,6 +46,8 @@ const DataTiming: React.FC<{ layout: Layout }> = ({ layout }) => {
         justifyContent: "center",
         padding: `0 ${layout.padding}px`,
         fontFamily: '"Inter", sans-serif',
+        transform: `scale(${scale})`,
+        transformOrigin: "center",
       }}
     >
       <div
@@ -95,7 +103,7 @@ const DataTiming: React.FC<{ layout: Layout }> = ({ layout }) => {
           </div>
           <span
             style={{
-              width: 120,
+              width: labelWidth,
               fontSize: layout.bodySize * 0.8,
               fontWeight: 500,
               color: colors.gray,
@@ -139,7 +147,7 @@ const DataTiming: React.FC<{ layout: Layout }> = ({ layout }) => {
           </div>
           <span
             style={{
-              width: 120,
+              width: labelWidth,
               fontSize: layout.bodySize * 0.8,
               fontWeight: 500,
               color: colors.teal,
@@ -157,6 +165,7 @@ const DataTiming: React.FC<{ layout: Layout }> = ({ layout }) => {
           fontSize: layout.titleSize * 0.7,
           fontWeight: 600,
           color: colors.amber,
+          textShadow: amberGlow,
           opacity: opacityIn(frame, 60),
           transform: `translateY(${Math.max(0, 40 - springIn(frame, 60) * 40)}px)`,
         }}
@@ -169,6 +178,7 @@ const DataTiming: React.FC<{ layout: Layout }> = ({ layout }) => {
 
 const DataEngagement: React.FC<{ layout: Layout }> = ({ layout }) => {
   const frame = useCurrentFrame();
+  const scale = pushIn(frame, 150, 1, 1.06);
   return (
     <AbsoluteFill
       style={{
@@ -178,6 +188,8 @@ const DataEngagement: React.FC<{ layout: Layout }> = ({ layout }) => {
         alignItems: "center",
         justifyContent: "center",
         fontFamily: '"Inter", sans-serif',
+        transform: `scale(${scale})`,
+        transformOrigin: "center",
       }}
     >
       <div
@@ -185,6 +197,7 @@ const DataEngagement: React.FC<{ layout: Layout }> = ({ layout }) => {
           fontSize: layout.statSize,
           fontWeight: 600,
           color: colors.amber,
+          textShadow: amberGlow,
           lineHeight: 1,
           opacity: opacityIn(frame, 0),
         }}
@@ -230,6 +243,7 @@ const DataEngagement: React.FC<{ layout: Layout }> = ({ layout }) => {
 
 const DataCrossposting: React.FC<{ layout: Layout }> = ({ layout }) => {
   const frame = useCurrentFrame();
+  const scale = pushIn(frame, 150, 1, 1.06);
   return (
     <AbsoluteFill
       style={{
@@ -238,6 +252,8 @@ const DataCrossposting: React.FC<{ layout: Layout }> = ({ layout }) => {
         alignItems: "center",
         justifyContent: "center",
         fontFamily: '"Inter", sans-serif',
+        transform: `scale(${scale})`,
+        transformOrigin: "center",
       }}
     >
       <div
@@ -264,6 +280,7 @@ const DataCrossposting: React.FC<{ layout: Layout }> = ({ layout }) => {
               fontSize: layout.statSize,
               fontWeight: 600,
               color: colors.teal,
+              textShadow: tealGlow,
               lineHeight: 1,
             }}
           >
@@ -317,66 +334,148 @@ const DataCrossposting: React.FC<{ layout: Layout }> = ({ layout }) => {
   );
 };
 
-const DataVideoDates: React.FC<{ layout: Layout }> = ({ layout }) => {
+// The bombshell: recap inclusion. 83% of winners appeared in the official
+// recap vs 4% of everyone else — the stat that ties back to the personal
+// story ("the recap included all the winners, before the announcement").
+const DataRecap: React.FC<{ layout: Layout }> = ({ layout }) => {
   const frame = useCurrentFrame();
+  const scale = pushIn(frame, 120, 1, 1.06);
+  const labelWidth = layout.bodySize * 2.8;
   return (
     <AbsoluteFill
       style={{
         backgroundColor: colors.bg,
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
         justifyContent: "center",
         padding: `0 ${layout.padding}px`,
         fontFamily: '"Inter", sans-serif',
+        transform: `scale(${scale})`,
+        transformOrigin: "center",
       }}
     >
       <div
         style={{
           fontSize: layout.bodySize,
           fontWeight: 500,
-          color: colors.textPrimary,
+          color: colors.textMuted,
           opacity: opacityIn(frame, 0),
-          textAlign: "center",
+          marginBottom: 40,
         }}
       >
-        We checked the video upload dates.
+        Who made the official recap?
       </div>
       <div
         style={{
-          fontSize: layout.bodySize,
-          fontWeight: 500,
+          display: "flex",
+          flexDirection: "column",
+          gap: 24,
+          width: "100%",
+          maxWidth: layout.maxWidth,
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <span
+            style={{
+              width: layout.padding * 1.2,
+              fontSize: layout.smallSize,
+              fontWeight: 500,
+              color: colors.textPrimary,
+              textAlign: "right",
+              flexShrink: 0,
+            }}
+          >
+            Winners
+          </span>
+          <div
+            style={{
+              flex: 1,
+              height: 40,
+              backgroundColor: colors.border,
+              borderRadius: 6,
+              overflow: "hidden",
+            }}
+          >
+            <div
+              style={{
+                height: "100%",
+                width: `${83 * barGrow(frame, 8, 28)}%`,
+                backgroundColor: colors.amber,
+                borderRadius: 6,
+                boxShadow: amberGlow,
+              }}
+            />
+          </div>
+          <span
+            style={{
+              width: labelWidth,
+              fontSize: layout.bodySize * 0.85,
+              fontWeight: 600,
+              color: colors.amber,
+              opacity: opacityIn(frame, 30),
+              flexShrink: 0,
+            }}
+          >
+            {countUp(frame, 30, 14, 83)}%
+          </span>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <span
+            style={{
+              width: layout.padding * 1.2,
+              fontSize: layout.smallSize,
+              fontWeight: 500,
+              color: colors.textMuted,
+              textAlign: "right",
+              flexShrink: 0,
+            }}
+          >
+            Everyone else
+          </span>
+          <div
+            style={{
+              flex: 1,
+              height: 36,
+              backgroundColor: colors.border,
+              borderRadius: 6,
+              overflow: "hidden",
+            }}
+          >
+            <div
+              style={{
+                height: "100%",
+                width: `${4 * barGrow(frame, 18, 28)}%`,
+                backgroundColor: colors.gray,
+                borderRadius: 6,
+              }}
+            />
+          </div>
+          <span
+            style={{
+              width: labelWidth,
+              fontSize: layout.bodySize * 0.85,
+              fontWeight: 500,
+              color: colors.gray,
+              opacity: opacityIn(frame, 40),
+              flexShrink: 0,
+            }}
+          >
+            {countUp(frame, 40, 14, 4)}%
+          </span>
+        </div>
+      </div>
+      <div
+        style={{
+          marginTop: 48,
+          fontSize: layout.titleSize * 0.7,
+          fontWeight: 600,
           color: colors.amber,
-          marginTop: 32,
-          opacity: opacityIn(frame, 25),
-          textAlign: "center",
+          textShadow: amberGlow,
+          opacity: opacityIn(frame, 70),
+          transform: `translateY(${Math.max(0, 40 - springIn(frame, 70) * 40)}px)`,
         }}
       >
-        No winner started before the challenge opened.
-      </div>
-      <div
-        style={{
-          fontSize: layout.bodySize,
-          fontWeight: 500,
-          color: colors.textPrimary,
-          marginTop: 40,
-          opacity: opacityIn(frame, 50),
-          textAlign: "center",
-        }}
-      >
-        The advantage wasn't preparation.
-      </div>
-      <div
-        style={{
-          fontSize: layout.bodySize,
-          fontWeight: 500,
-          color: colors.amber,
-          marginTop: 8,
-          opacity: opacityIn(frame, 60),
-          textAlign: "center",
-        }}
-      >
-        It was early, loud execution.
+        The recap already knew.
       </div>
     </AbsoluteFill>
   );

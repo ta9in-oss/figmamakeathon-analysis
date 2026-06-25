@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame, interpolate, Easing } from "remotion";
 import { colors } from "../constants/colors";
 import type { Layout } from "../constants/layout";
-import { opacityIn } from "../components/animations";
+import { opacityIn, pushIn } from "../components/animations";
 
 export const Scene6_Close: React.FC<{ layout: Layout }> = ({ layout }) => {
   const frame = useCurrentFrame();
@@ -17,6 +17,7 @@ export const Scene6_Close: React.FC<{ layout: Layout }> = ({ layout }) => {
     extrapolateRight: "clamp",
     easing: Easing.out(Easing.cubic),
   });
+  const scale = pushIn(frame, 120, 1, 1.05);
 
   return (
     <AbsoluteFill
@@ -29,6 +30,8 @@ export const Scene6_Close: React.FC<{ layout: Layout }> = ({ layout }) => {
         opacity: fadeOut,
         padding: `0 ${layout.padding}px`,
         fontFamily: '"Inter", sans-serif',
+        transform: `scale(${scale})`,
+        transformOrigin: "center",
       }}
     >
       <div
@@ -47,6 +50,7 @@ export const Scene6_Close: React.FC<{ layout: Layout }> = ({ layout }) => {
           fontSize: layout.bodySize * 1.1,
           fontWeight: 600,
           color: colors.amber,
+          textShadow: "0 0 48px rgba(239,159,39,0.4)",
           opacity: opacityIn(frame, 8),
           position: "relative",
           display: "inline-block",

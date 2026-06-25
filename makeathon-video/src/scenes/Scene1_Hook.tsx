@@ -1,29 +1,19 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, spring, useVideoConfig } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { colors } from "../constants/colors";
 import type { Layout } from "../constants/layout";
 import { BubbleField } from "../components/BubbleField";
+import { dramaIn, pushIn } from "../components/animations";
 
 export const Scene1_Hook: React.FC<{ layout: Layout }> = ({ layout }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
 
-  const words = [
-    { text: "How", delay: 0 },
-    { text: "to", delay: 6 },
-    { text: "actually", delay: 12, color: colors.amber },
-    { text: "win", delay: 20 },
-    { text: "a", delay: 28 },
-    { text: "Figma", delay: 36, color: colors.amber },
-    { text: "Makeathon?", delay: 44, color: colors.amber },
-  ];
+  const scale = pushIn(frame, 90, 1.04, 1.12);
 
-  const qMarkScale = spring({
-    frame: frame - 80,
-    fps: 30,
-    config: { damping: 8, stiffness: 200 },
-  });
-  const qMarkPulse = 1 + (qMarkScale > 0 ? qMarkScale * 0.1 : 0);
+  const eyebrow = dramaIn(frame, 4, 20);
+  const line1 = dramaIn(frame, 18, 46);
+  const line2 = dramaIn(frame, 40, 46);
 
   return (
     <AbsoluteFill
@@ -35,44 +25,64 @@ export const Scene1_Hook: React.FC<{ layout: Layout }> = ({ layout }) => {
         fontFamily: '"Inter", sans-serif',
       }}
     >
-      <BubbleField width={width} height={height} />
+      <AbsoluteFill style={{ transform: `scale(${scale})`, transformOrigin: "center" }}>
+        <BubbleField width={width} height={height} />
+      </AbsoluteFill>
+
       <div
         style={{
           position: "relative",
           zIndex: 1,
           display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "0.4em 0.6em",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
           maxWidth: layout.maxWidth,
           padding: layout.padding,
-          fontSize: layout.titleSize,
-          fontWeight: 600,
-          lineHeight: 1.15,
-          color: colors.textPrimary,
+          transform: `scale(${scale})`,
+          transformOrigin: "center",
         }}
       >
-        {words.map((w, i) => {
-          const active = frame - w.delay;
-          const y = active < 0 ? 28 : active < 12 ? 28 - (active / 12) * 28 : 0;
-          const opacity = active < 0 ? 0 : active < 8 ? active / 8 : 1;
-          const isLast = w.text === "Makeathon?";
-          return (
-            <span
-              key={i}
-              style={{
-                opacity,
-                transform: isLast
-                  ? `translateY(${y}px) scale(${qMarkPulse})`
-                  : `translateY(${y}px)`,
-                color: w.color ?? colors.textPrimary,
-                transformOrigin: "center center",
-              }}
-            >
-              {w.text}
-            </span>
-          );
-        })}
+        <div
+          style={{
+            fontSize: layout.smallSize * 0.82,
+            fontWeight: 600,
+            letterSpacing: "0.32em",
+            textTransform: "uppercase",
+            color: colors.textMuted,
+            opacity: eyebrow.opacity,
+            transform: `translateY(${eyebrow.y}px)`,
+            marginBottom: layout.bodySize * 0.9,
+          }}
+        >
+          318 entries · 3 editions · $300K
+        </div>
+
+        <div
+          style={{
+            fontSize: layout.titleSize * 1.04,
+            fontWeight: 600,
+            lineHeight: 1.08,
+            color: colors.textPrimary,
+            opacity: line1.opacity,
+            transform: `translateY(${line1.y}px)`,
+          }}
+        >
+          Why did they win
+        </div>
+        <div
+          style={{
+            fontSize: layout.titleSize * 1.04,
+            fontWeight: 600,
+            lineHeight: 1.08,
+            color: colors.amber,
+            textShadow: "0 0 48px rgba(239,159,39,0.4)",
+            opacity: line2.opacity,
+            transform: `translateY(${line2.y}px)`,
+          }}
+        >
+          and I didn&rsquo;t?
+        </div>
       </div>
     </AbsoluteFill>
   );
