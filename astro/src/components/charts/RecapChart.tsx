@@ -10,8 +10,8 @@ export default function RecapChart() {
 
   useEffect(() => {
     loadCSV().then((data: Entry[]) => {
-      const winners = data.filter(d => d.winner === 'True');
-      const nonWinners = data.filter(d => d.winner === 'False');
+      const winners = data.filter(d => d.winner === 'true');
+      const nonWinners = data.filter(d => d.winner === 'false');
 
       const pct = (arr: Entry[], field: keyof Entry) => 
         (arr.filter(d => d[field] === 'True').length / arr.length) * 100;

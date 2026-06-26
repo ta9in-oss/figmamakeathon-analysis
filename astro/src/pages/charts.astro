@@ -4,45 +4,246 @@ import TimingHistogram from "../components/charts/TimingHistogram";
 import EngagementScatter from "../components/charts/EngagementScatter";
 import ComparisonBoxplots from "../components/charts/ComparisonBoxplots";
 import RecapChart from "../components/charts/RecapChart";
+import EngagementDistribution from "../components/charts/EngagementDistribution";
+import WinnerTimeline from "../components/charts/WinnerTimeline";
+import VideoVsSocialChart from "../components/charts/VideoVsSocialChart";
+import StaffPresenceChart from "../components/charts/StaffPresenceChart";
 ---
 
 <Layout title="Charts">
   <section class="mx-auto max-w-4xl px-6 py-16">
     <h1 class="text-3xl font-bold tracking-tight mb-2">Interactive Charts</h1>
-    <p class="text-muted-foreground mb-12">Live-rendered charts from the analysis dataset. Hover for details.</p>
+    <p class="text-muted-foreground mb-12">6 lenses on 4,212 in-window posts across 3 editions. Hover charts for details.</p>
 
-    <div class="space-y-16">
+    <div class="space-y-20">
+
+      <!-- 1. OVERALL STATS -->
       <div>
-        <h2 class="text-lg font-semibold mb-3">Posting Day Distribution: Winners vs Non-Winners</h2>
-        <p class="text-sm text-muted-foreground mb-4">When did winners post their submissions compared to everyone else?</p>
+        <div class="mb-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Q1</span>
+          <h2 class="text-xl font-bold mt-1">Overall Stats</h2>
+          <p class="text-sm text-muted-foreground mt-1">High-level numbers across all three editions.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-3xl font-semibold" style="color:#BA7517">4,212</div>
+            <div class="text-xs text-muted-foreground mt-1">In-window posts</div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-3xl font-semibold" style="color:#BA7517">3,303</div>
+            <div class="text-xs text-muted-foreground mt-1">Unique creators</div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-3xl font-semibold" style="color:#1D9E75">7.7×</div>
+            <div class="text-xs text-muted-foreground mt-1">Winner engagement gap</div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-3xl font-semibold" style="color:#1D9E75">27</div>
+            <div class="text-xs text-muted-foreground mt-1">Winner posts detected</div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-sm font-semibold mb-2">Sep 2025</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>1,771 posts · 1,406 creators</div>
+              <div>Winners avg <strong class="text-foreground">69</strong> likes vs <strong class="text-foreground">4.0</strong></div>
+              <div>Video: winners <strong class="text-foreground">40%</strong> vs <strong class="text-foreground">7.5%</strong></div>
+            </div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-sm font-semibold mb-2">Mar 2026</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>1,495 posts · 1,239 creators</div>
+              <div>Winners avg <strong class="text-foreground">55</strong> likes vs <strong class="text-foreground">9.1</strong></div>
+              <div>Video: winners <strong class="text-foreground">90%</strong> vs <strong class="text-foreground">56%</strong></div>
+            </div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-sm font-semibold mb-2">Config 2026</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>946 posts · 658 creators</div>
+              <div>Winners avg <strong class="text-foreground">47</strong> likes vs <strong class="text-foreground">9.0</strong></div>
+              <div>Video: winners <strong class="text-foreground">67%</strong> vs <strong class="text-foreground">59%</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. WHAT EVERYBODY DID -->
+      <div>
+        <div class="mb-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Q2</span>
+          <h2 class="text-xl font-bold mt-1">What Everybody Did</h2>
+          <p class="text-sm text-muted-foreground mt-1">How did the typical submission perform? Most posts got very few likes — the distribution is heavily right-skewed.</p>
+        </div>
+        <div class="rounded-xl border border-border p-6 bg-card mb-6">
+          <h3 class="text-sm font-semibold mb-4">Engagement Tier Distribution by Edition</h3>
+          <EngagementDistribution client:load />
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs text-muted-foreground mb-2 font-semibold">Sep 2025 — 8 day window</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>36% got <strong class="text-foreground">0 likes</strong></div>
+              <div>49% got <strong class="text-foreground">1–5 likes</strong></div>
+              <div>12% got <strong class="text-foreground">6–20 likes</strong></div>
+              <div>Video in posts: <strong class="text-foreground">7.9%</strong></div>
+            </div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs text-muted-foreground mb-2 font-semibold">Mar 2026 — 44 day window</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>2% got <strong class="text-foreground">0 likes</strong></div>
+              <div>54% got <strong class="text-foreground">1–5 likes</strong></div>
+              <div>36% got <strong class="text-foreground">6–20 likes</strong></div>
+              <div>Video in posts: <strong class="text-foreground">56.5%</strong></div>
+            </div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs text-muted-foreground mb-2 font-semibold">Config 2026 — 15 day window</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>4% got <strong class="text-foreground">0 likes</strong></div>
+              <div>65% got <strong class="text-foreground">1–5 likes</strong></div>
+              <div>21% got <strong class="text-foreground">6–20 likes</strong></div>
+              <div>Video in posts: <strong class="text-foreground">58.8%</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. WINNER PATTERNS -->
+      <div>
+        <div class="mb-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Q3</span>
+          <h2 class="text-xl font-bold mt-1">What Winners Did — and When</h2>
+          <p class="text-sm text-muted-foreground mt-1">Stars mark winner posts. Explore by edition to see where they land in the contest window.</p>
+        </div>
+        <div class="rounded-xl border border-border p-6 bg-card mb-6">
+          <h3 class="text-sm font-semibold mb-4">Winner Posts: Day × Likes (stars = winners)</h3>
+          <WinnerTimeline client:load />
+        </div>
         <div class="rounded-xl border border-border p-6 bg-card">
+          <h3 class="text-sm font-semibold mb-4">When Did Winners Post? (vs everyone else)</h3>
           <TimingHistogram client:load />
         </div>
       </div>
 
+      <!-- 4. REACH / SOCIAL PRESENCE -->
       <div>
-        <h2 class="text-lg font-semibold mb-3">Engagement vs Posting Day</h2>
-        <p class="text-sm text-muted-foreground mb-4">Scatter plot showing engagement scores against submission day. Purple dots are winners.</p>
-        <div class="rounded-xl border border-border p-6 bg-card">
+        <div class="mb-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Q4</span>
+          <h2 class="text-xl font-bold mt-1">Reach &amp; Social Presence</h2>
+          <p class="text-sm text-muted-foreground mt-1">Contra follower counts are not exposed in the public API. Social cross-posting (X, LinkedIn, Instagram, Threads, Bluesky) is used as a social presence proxy.</p>
+        </div>
+        <div class="rounded-xl border border-border p-6 bg-card mb-6">
+          <h3 class="text-sm font-semibold mb-4">Video Usage: Winners vs Non-Winners by Edition</h3>
+          <VideoVsSocialChart client:load />
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs font-semibold text-muted-foreground mb-2">Sep 2025</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>Winners avg social platforms: <strong class="text-foreground">0.2</strong></div>
+              <div>Non-winners avg: <strong class="text-foreground">0.1</strong></div>
+            </div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs font-semibold text-muted-foreground mb-2">Mar 2026</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>Winners avg social platforms: <strong class="text-foreground">0.9</strong></div>
+              <div>Non-winners avg: <strong class="text-foreground">0.5</strong></div>
+            </div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs font-semibold text-muted-foreground mb-2">Config 2026</div>
+            <div class="text-xs text-muted-foreground space-y-1">
+              <div>Winners avg social platforms: <strong class="text-foreground">1.2</strong></div>
+              <div>Non-winners avg: <strong class="text-foreground">0.4</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. STAFF & JUDGES -->
+      <div>
+        <div class="mb-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Q5</span>
+          <h2 class="text-xl font-bold mt-1">Did Contra Staff Interact?</h2>
+          <p class="text-sm text-muted-foreground mt-1">Contra staff (Gui Seiz, Jan Mráz, Galaxia Wu, Sabrina Polanco, Daniela Muntyan) posted on all three editions. These are announcements and winner reveals, not judge scores. Reply/comment data requires per-post API calls not yet implemented.</p>
+        </div>
+        <div class="rounded-xl border border-border p-6 bg-card mb-6">
+          <h3 class="text-sm font-semibold mb-4">Staff Posts vs Participant Posts per Edition</h3>
+          <StaffPresenceChart client:load />
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs font-semibold text-muted-foreground mb-2">Sep 2025 — 8 staff posts</div>
+            <div class="text-xs text-muted-foreground">Galaxia Wu (CEO) made the kick-off announcement (47K+ impressions). Gui Seiz posted from Config 2026 tag in the Sep window.</div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs font-semibold text-muted-foreground mb-2">Mar 2026 — 5 staff posts</div>
+            <div class="text-xs text-muted-foreground">Gui Seiz's winner announcement reached 91,802 impressions — the most-viewed post across all editions. Jan Mráz posted criteria updates.</div>
+          </div>
+          <div class="rounded-xl border border-border p-4 bg-card">
+            <div class="text-xs font-semibold text-muted-foreground mb-2">Config 2026 — 5 staff posts</div>
+            <div class="text-xs text-muted-foreground">Jan Mráz posted 3 criteria/update posts (15K–26K impressions each). Staff posts clustered around day 1 (kick-off) and day 14+ (winner reveals).</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. CRITERIA ALIGNMENT -->
+      <div>
+        <div class="mb-6">
+          <span class="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Q6</span>
+          <h2 class="text-xl font-bold mt-1">Winners vs Judging Criteria</h2>
+          <p class="text-sm text-muted-foreground mt-1">Did winners explicitly mention judging criteria in their posts? Keyword match across body text of all detected winner posts.</p>
+        </div>
+        <div class="rounded-xl border border-border p-6 bg-card mb-6">
+          <h3 class="text-sm font-semibold mb-4">Engagement Signal: Scores by Posting Day</h3>
           <EngagementScatter client:load />
         </div>
-      </div>
-
-      <div>
-        <h2 class="text-lg font-semibold mb-3">Key Metrics Comparison: Winners vs Non-Winners</h2>
-        <p class="text-sm text-muted-foreground mb-4">Median values for posting day, engagement score, creator followers, and social platforms.</p>
-        <div class="rounded-xl border border-border p-6 bg-card">
-          <ComparisonBoxplots client:load />
+        <div class="rounded-xl border border-border p-4 bg-card">
+          <div class="text-sm font-semibold mb-3">Judging Criteria by Edition</div>
+          <div class="grid grid-cols-3 gap-4 text-xs text-muted-foreground">
+            <div>
+              <div class="font-semibold text-foreground mb-1">Sep 2025</div>
+              <div>Keywords: interactive, figma, prototype, web, experience</div>
+              <div class="mt-1">Winners mentioning criteria keywords: most mentioned "figma" and "interactive" — consistent with the interactive-prototype format.</div>
+            </div>
+            <div>
+              <div class="font-semibold text-foreground mb-1">Mar 2026</div>
+              <div>Keywords: craft, visual, interaction, original, innovative</div>
+              <div class="mt-1">Common Thread (Charlota) scored high on "craft" and "interaction." Lee Black's Airwwave hit "innovative" and "interaction."</div>
+            </div>
+            <div>
+              <div class="font-semibold text-foreground mb-1">Config 2026</div>
+              <div>Keywords: config, build in public, workflow, community, innovative</div>
+              <div class="mt-1">"Build In Public" category explicitly rewarded posting frequency. Halle Clark (Still Here) had the lowest likes but highest criteria alignment.</div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Legacy charts (kept for reference) -->
       <div>
-        <h2 class="text-lg font-semibold mb-3">Recap and Blog Inclusion Rates</h2>
-        <p class="text-sm text-muted-foreground mb-4">Percentage of winners vs non-winners featured in official Contra recaps and Figma blog posts.</p>
-        <div class="rounded-xl border border-border p-6 bg-card">
-          <RecapChart client:load />
+        <div class="mb-6">
+          <h2 class="text-xl font-bold">Additional Charts</h2>
+        </div>
+        <div class="space-y-8">
+          <div class="rounded-xl border border-border p-6 bg-card">
+            <h3 class="text-sm font-semibold mb-3">Key Metrics Comparison: Winners vs Non-Winners</h3>
+            <p class="text-xs text-muted-foreground mb-4">Median values for posting day, engagement, and social platforms.</p>
+            <ComparisonBoxplots client:load />
+          </div>
+          <div class="rounded-xl border border-border p-6 bg-card">
+            <h3 class="text-sm font-semibold mb-3">Contra Recap &amp; Figma Blog Inclusion</h3>
+            <p class="text-xs text-muted-foreground mb-4">Official recap/blog inclusion — data not yet populated (all false in current dataset).</p>
+            <RecapChart client:load />
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 </Layout>

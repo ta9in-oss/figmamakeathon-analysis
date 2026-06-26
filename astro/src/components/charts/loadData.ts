@@ -14,6 +14,7 @@ export interface Entry {
   social_platforms_count: number;
   in_contra_recap: string;
   in_figma_blog: string;
+  has_video: string;
   video_url: string;
   cross_posted_x: string;
   cross_posted_linkedin: string;

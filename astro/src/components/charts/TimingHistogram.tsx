@@ -10,8 +10,8 @@ export default function TimingHistogram() {
 
   useEffect(() => {
     loadCSV().then((data: Entry[]) => {
-      const winners = data.filter(d => d.winner === 'True');
-      const nonWinners = data.filter(d => d.winner === 'False');
+      const winners = data.filter(d => d.winner === 'true');
+      const nonWinners = data.filter(d => d.winner === 'false');
       
       const maxDay = Math.max(...data.map(d => d.day_relative_to_open));
       const bins = Array.from({ length: maxDay }, (_, i) => i + 1);

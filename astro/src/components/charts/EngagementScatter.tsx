@@ -10,8 +10,8 @@ export default function EngagementScatter() {
 
   useEffect(() => {
     loadCSV().then((data: Entry[]) => {
-      const winners = data.filter(d => d.winner === 'True').map(d => ({ x: d.day_relative_to_open, y: d.engagement_score }));
-      const nonWinners = data.filter(d => d.winner === 'False').map(d => ({ x: d.day_relative_to_open, y: d.engagement_score }));
+      const winners = data.filter(d => d.winner === 'true').map(d => ({ x: d.day_relative_to_open, y: d.engagement_score }));
+      const nonWinners = data.filter(d => d.winner === 'false').map(d => ({ x: d.day_relative_to_open, y: d.engagement_score }));
 
       if (chartRef.current) chartRef.current.destroy();
       

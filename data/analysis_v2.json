@@ -1,0 +1,1178 @@
+{
+  "generated": "2026-06-26T22:11:25.222209+00:00",
+  "total_scraped": 6030,
+  "total_in_window": 4212,
+  "total_winners": 27,
+  "total_non_winners": 4185,
+  "overall_stats": {
+    "winner_avg_likes": 54.4,
+    "nonwin_avg_likes": 6.9,
+    "engagement_ratio": 7.9,
+    "winner_video_pct": 70.4,
+    "nonwin_video_pct": 36.2,
+    "total_staff_posts": 29,
+    "unique_creators": 3069
+  },
+  "per_edition": {
+    "Figma Make-a-thon (Sep 2025)": {
+      "label": "Sep 2025",
+      "window_days": 8,
+      "q1_overview": {
+        "total_posts": 1771,
+        "unique_creators": 1406,
+        "winner_count": 5,
+        "avg_likes": 4.2,
+        "median_likes": 1,
+        "video_pct": 7.6,
+        "cross_posting_pct": 0.1,
+        "staff_post_count": 8
+      },
+      "q2_what_everyone_did": {
+        "day_histogram": [
+          {
+            "day": 1,
+            "count": 0
+          },
+          {
+            "day": 2,
+            "count": 122
+          },
+          {
+            "day": 3,
+            "count": 144
+          },
+          {
+            "day": 4,
+            "count": 152
+          },
+          {
+            "day": 5,
+            "count": 161
+          },
+          {
+            "day": 6,
+            "count": 183
+          },
+          {
+            "day": 7,
+            "count": 352
+          },
+          {
+            "day": 8,
+            "count": 657
+          }
+        ],
+        "content": {
+          "has_video_pct": 7.6,
+          "cross_x_pct": 0.0,
+          "cross_li_pct": 0.1,
+          "cross_ig_pct": 0.0,
+          "cross_th_pct": 0.0,
+          "cross_bsky_pct": 0.0,
+          "avg_social_platforms": 0.0
+        },
+        "engagement_tiers": {
+          "0_likes": 36.2,
+          "1_5_likes": 48.8,
+          "6_20_likes": 11.6,
+          "21_50_likes": 1.9,
+          "50_plus_likes": 1.5,
+          "raw": {
+            "0": 641,
+            "1-5": 864,
+            "6-20": 206,
+            "21-50": 34,
+            "50+": 26
+          }
+        }
+      },
+      "q3_winner_patterns": {
+        "avg_winner_day": 5.4,
+        "avg_nonwin_day": 6.2,
+        "first_half_winners": 2,
+        "second_half_winners": 3,
+        "winner_avg_likes": 69,
+        "nonwin_avg_likes": 4.0,
+        "winner_video_pct": 40.0,
+        "nonwin_video_pct": 7.5,
+        "winner_avg_social": 0,
+        "nonwin_avg_social": 0.0,
+        "winner_posts": [
+          {
+            "author": "Cara Ellis",
+            "uid": "YQ6ZPZ3e",
+            "day": 6,
+            "likes": 217,
+            "has_video": false,
+            "social_count": 0,
+            "category": "1st ($50K)",
+            "body_snippet": "\"Poetry, love letters and shopping lists always read better when they're handwritten. \n\nThis is WEB "
+          },
+          {
+            "author": "Johannes Specht",
+            "uid": "boAQZmAB",
+            "day": 6,
+            "likes": 65,
+            "has_video": false,
+            "social_count": 0,
+            "category": "3rd ($7.5K)",
+            "body_snippet": "\"My final submission of Plan That Trip with a few minor corrections. \ud83e\udd17\n\nWe all know the struggle: yo"
+          },
+          {
+            "author": "Cara Ellis",
+            "uid": "lUsgeNms",
+            "day": 7,
+            "likes": 44,
+            "has_video": true,
+            "social_count": 0,
+            "category": "1st ($50K)",
+            "body_snippet": "\"My Figma Makeathon submission is up and there are a couple of easter eggs I haven't mentioned! If y"
+          },
+          {
+            "author": "Cara Ellis",
+            "uid": "klWWkOmB",
+            "day": 4,
+            "likes": 16,
+            "has_video": false,
+            "social_count": 0,
+            "category": "1st ($50K)",
+            "body_snippet": "\"I tested out  's genius Figma Makeathon entry today and the 8 ball spoke... \n\nAs instructed, here's"
+          },
+          {
+            "author": "Johannes Specht",
+            "uid": "ENmkvZEZ",
+            "day": 4,
+            "likes": 3,
+            "has_video": true,
+            "social_count": 0,
+            "category": "3rd ($7.5K)",
+            "body_snippet": "\"We all know the struggle: you want to plan a trip with friends, but everyone has different ideas. T"
+          }
+        ]
+      },
+      "q5_staff_presence": {
+        "total_staff_posts": 8,
+        "note": "Reply/comment data requires post-level API calls not yet implemented \u2014 staff interaction shown via post presence only.",
+        "staff_breakdown": [
+          {
+            "author": "Sabrina Polanco",
+            "post_count": 5,
+            "days": [
+              2,
+              4,
+              7,
+              7,
+              8
+            ]
+          },
+          {
+            "author": "Daniela Muntyan",
+            "post_count": 1,
+            "days": [
+              2
+            ]
+          },
+          {
+            "author": "Galaxia Wu",
+            "post_count": 1,
+            "days": [
+              1
+            ]
+          },
+          {
+            "author": "Gui Seiz",
+            "post_count": 1,
+            "days": [
+              2
+            ]
+          }
+        ],
+        "participant_posts": 1771,
+        "staff_pct_of_total": 0.4
+      }
+    },
+    "Figma Makeathon March 2026": {
+      "label": "Mar 2026",
+      "window_days": 44,
+      "q1_overview": {
+        "total_posts": 1495,
+        "unique_creators": 1239,
+        "winner_count": 10,
+        "avg_likes": 9.4,
+        "median_likes": 4,
+        "video_pct": 56.5,
+        "cross_posting_pct": 9.0,
+        "staff_post_count": 5
+      },
+      "q2_what_everyone_did": {
+        "day_histogram": [
+          {
+            "day": 1,
+            "count": 0
+          },
+          {
+            "day": 2,
+            "count": 0
+          },
+          {
+            "day": 3,
+            "count": 0
+          },
+          {
+            "day": 4,
+            "count": 0
+          },
+          {
+            "day": 5,
+            "count": 0
+          },
+          {
+            "day": 6,
+            "count": 0
+          },
+          {
+            "day": 7,
+            "count": 0
+          },
+          {
+            "day": 8,
+            "count": 0
+          },
+          {
+            "day": 9,
+            "count": 0
+          },
+          {
+            "day": 10,
+            "count": 0
+          },
+          {
+            "day": 11,
+            "count": 0
+          },
+          {
+            "day": 12,
+            "count": 0
+          },
+          {
+            "day": 13,
+            "count": 0
+          },
+          {
+            "day": 14,
+            "count": 0
+          },
+          {
+            "day": 15,
+            "count": 0
+          },
+          {
+            "day": 16,
+            "count": 0
+          },
+          {
+            "day": 17,
+            "count": 0
+          },
+          {
+            "day": 18,
+            "count": 0
+          },
+          {
+            "day": 19,
+            "count": 0
+          },
+          {
+            "day": 20,
+            "count": 0
+          },
+          {
+            "day": 21,
+            "count": 0
+          },
+          {
+            "day": 22,
+            "count": 0
+          },
+          {
+            "day": 23,
+            "count": 0
+          },
+          {
+            "day": 24,
+            "count": 0
+          },
+          {
+            "day": 25,
+            "count": 9
+          },
+          {
+            "day": 26,
+            "count": 12
+          },
+          {
+            "day": 27,
+            "count": 43
+          },
+          {
+            "day": 28,
+            "count": 91
+          },
+          {
+            "day": 29,
+            "count": 133
+          },
+          {
+            "day": 30,
+            "count": 359
+          },
+          {
+            "day": 31,
+            "count": 818
+          },
+          {
+            "day": 32,
+            "count": 12
+          },
+          {
+            "day": 33,
+            "count": 9
+          },
+          {
+            "day": 34,
+            "count": 1
+          },
+          {
+            "day": 35,
+            "count": 2
+          },
+          {
+            "day": 36,
+            "count": 4
+          },
+          {
+            "day": 37,
+            "count": 0
+          },
+          {
+            "day": 38,
+            "count": 1
+          },
+          {
+            "day": 39,
+            "count": 0
+          },
+          {
+            "day": 40,
+            "count": 0
+          },
+          {
+            "day": 41,
+            "count": 1
+          },
+          {
+            "day": 42,
+            "count": 0
+          },
+          {
+            "day": 43,
+            "count": 0
+          },
+          {
+            "day": 44,
+            "count": 0
+          }
+        ],
+        "content": {
+          "has_video_pct": 56.5,
+          "cross_x_pct": 5.2,
+          "cross_li_pct": 3.1,
+          "cross_ig_pct": 1.5,
+          "cross_th_pct": 0.0,
+          "cross_bsky_pct": 0.0,
+          "avg_social_platforms": 0.1
+        },
+        "engagement_tiers": {
+          "0_likes": 2.1,
+          "1_5_likes": 54.4,
+          "6_20_likes": 36.3,
+          "21_50_likes": 4.7,
+          "50_plus_likes": 2.5,
+          "raw": {
+            "0": 31,
+            "1-5": 814,
+            "6-20": 543,
+            "21-50": 70,
+            "50+": 37
+          }
+        }
+      },
+      "q3_winner_patterns": {
+        "avg_winner_day": 30.3,
+        "avg_nonwin_day": 30.3,
+        "first_half_winners": 0,
+        "second_half_winners": 10,
+        "winner_avg_likes": 55.4,
+        "nonwin_avg_likes": 9.1,
+        "winner_video_pct": 90.0,
+        "nonwin_video_pct": 56.2,
+        "winner_avg_social": 0,
+        "nonwin_avg_social": 0.1,
+        "winner_posts": [
+          {
+            "author": "Lee Black",
+            "uid": "l7Qgl5iJ",
+            "day": 30,
+            "likes": 222,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Boundary Pushing",
+            "body_snippet": "\"Imagine conducting ambient music in mid-air. It's like Minority Report, but instead of solving crim"
+          },
+          {
+            "author": "Charlota Blun\u00e1rov\u00e1",
+            "uid": "0k6lFX6b",
+            "day": 28,
+            "likes": 173,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Best Overall",
+            "body_snippet": "\"I built a multiplayer embroidery sampler for the internet. It's called Common Thread.\nIt's the firs"
+          },
+          {
+            "author": "Lee Black",
+            "uid": "AULZ64Pb",
+            "day": 28,
+            "likes": 83,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Boundary Pushing",
+            "body_snippet": "\"Imagine treating scroll like an instrument, not a wheel. For\u00a0#FigmaMakeathon\u00a0I built\u00a0ScrollFolio\u00a0in"
+          },
+          {
+            "author": "Omayer  Zishan",
+            "uid": "vkzb7Ike",
+            "day": 31,
+            "likes": 22,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Excellence in Craft",
+            "body_snippet": "\"hey everyone, introducing Pulse. From wars and the Myanmar earthquake to a gas leak on your street "
+          },
+          {
+            "author": "Charlota Blun\u00e1rov\u00e1",
+            "uid": "yl6hoMBb",
+            "day": 31,
+            "likes": 21,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Best Overall",
+            "body_snippet": "\"breathe in air, breathe out flowers.  you know how every video call starts with 3 awkward minutes w"
+          },
+          {
+            "author": "Dann Petty",
+            "uid": "dn6kip0O",
+            "day": 31,
+            "likes": 11,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Fan Favorite",
+            "body_snippet": "\"After I finish a design project,\nthe last thing I want to do is open Figma again just to make a pos"
+          },
+          {
+            "author": "Kiel Cole",
+            "uid": "RckrMNTH",
+            "day": 31,
+            "likes": 10,
+            "has_video": false,
+            "social_count": 0,
+            "category": "Excellence in Craft",
+            "body_snippet": "\"\ud83d\uddfc TOKYO is a fully interactive 16-bit world you can actually explore. \ud83c\udfae What's inside:\n\u2192 A cinemati"
+          },
+          {
+            "author": "Paige Latimer",
+            "uid": "qzPXpNxt",
+            "day": 31,
+            "likes": 7,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Reimagining",
+            "body_snippet": "\"vintage photobooths are having a moment, and i\u2019m obsessed. but sometimes the booth isn\u2019t nearby\u2026 an"
+          },
+          {
+            "author": "Aleyna \u00c7atak",
+            "uid": "xuhtFiNf",
+            "day": 31,
+            "likes": 4,
+            "has_video": true,
+            "social_count": 0,
+            "category": "New Interaction",
+            "body_snippet": "\"What if you had to blow a kiss to your phone instead of tapping? \ud83d\udc8b  Let me introduce:  Face-to-Navi"
+          },
+          {
+            "author": "Bukola Ayodele Jimoh",
+            "uid": "43qDEz9b",
+            "day": 31,
+            "likes": 1,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Excellence in Craft",
+            "body_snippet": "\"I built AURA \u2013 Weather Synthesizer \ud83c\udf26\ufe0f\ud83c\udfb5 Type any city. AURA turns real-time weather data into living"
+          }
+        ]
+      },
+      "q5_staff_presence": {
+        "total_staff_posts": 5,
+        "note": "Reply/comment data requires post-level API calls not yet implemented \u2014 staff interaction shown via post presence only.",
+        "staff_breakdown": [
+          {
+            "author": "Gui Seiz",
+            "post_count": 3,
+            "days": [
+              24,
+              25,
+              32
+            ]
+          },
+          {
+            "author": "Sabrina Polanco",
+            "post_count": 2,
+            "days": [
+              31,
+              31
+            ]
+          }
+        ],
+        "participant_posts": 1495,
+        "staff_pct_of_total": 0.3
+      }
+    },
+    "Config Makeathon 2026": {
+      "label": "Config 2026",
+      "window_days": 15,
+      "q1_overview": {
+        "total_posts": 946,
+        "unique_creators": 658,
+        "winner_count": 12,
+        "avg_likes": 9.5,
+        "median_likes": 3.0,
+        "video_pct": 58.6,
+        "cross_posting_pct": 14.8,
+        "staff_post_count": 5
+      },
+      "q2_what_everyone_did": {
+        "day_histogram": [
+          {
+            "day": 1,
+            "count": 3
+          },
+          {
+            "day": 2,
+            "count": 50
+          },
+          {
+            "day": 3,
+            "count": 37
+          },
+          {
+            "day": 4,
+            "count": 35
+          },
+          {
+            "day": 5,
+            "count": 32
+          },
+          {
+            "day": 6,
+            "count": 38
+          },
+          {
+            "day": 7,
+            "count": 30
+          },
+          {
+            "day": 8,
+            "count": 31
+          },
+          {
+            "day": 9,
+            "count": 57
+          },
+          {
+            "day": 10,
+            "count": 76
+          },
+          {
+            "day": 11,
+            "count": 46
+          },
+          {
+            "day": 12,
+            "count": 68
+          },
+          {
+            "day": 13,
+            "count": 105
+          },
+          {
+            "day": 14,
+            "count": 121
+          },
+          {
+            "day": 15,
+            "count": 217
+          }
+        ],
+        "content": {
+          "has_video_pct": 58.6,
+          "cross_x_pct": 8.0,
+          "cross_li_pct": 7.2,
+          "cross_ig_pct": 2.5,
+          "cross_th_pct": 0.0,
+          "cross_bsky_pct": 0.0,
+          "avg_social_platforms": 0.2
+        },
+        "engagement_tiers": {
+          "0_likes": 3.5,
+          "1_5_likes": 65.5,
+          "6_20_likes": 21.1,
+          "21_50_likes": 6.1,
+          "50_plus_likes": 3.7,
+          "raw": {
+            "0": 33,
+            "1-5": 620,
+            "6-20": 200,
+            "21-50": 58,
+            "50+": 35
+          }
+        }
+      },
+      "q3_winner_patterns": {
+        "avg_winner_day": 10.2,
+        "avg_nonwin_day": 10.7,
+        "first_half_winners": 4,
+        "second_half_winners": 8,
+        "winner_avg_likes": 47.5,
+        "nonwin_avg_likes": 9.0,
+        "winner_video_pct": 66.7,
+        "nonwin_video_pct": 58.5,
+        "winner_avg_social": 0.3,
+        "nonwin_avg_social": 0.2,
+        "winner_posts": [
+          {
+            "author": "Lee Black",
+            "uid": "kkCj5cQh",
+            "day": 15,
+            "likes": 156,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Innovative Workflow",
+            "body_snippet": "\"Super happy to share my entry for the Figma Makeathon \ud83d\ude0a\n\nConnected Earth. \n\nLanguage separates us. "
+          },
+          {
+            "author": "Nigar Naghdaliyeva",
+            "uid": "UCU1n3IE",
+            "day": 15,
+            "likes": 119,
+            "has_video": true,
+            "social_count": 1,
+            "category": "Build With Purpose",
+            "body_snippet": "\"I designed EyeText \ud83d\udc41\ufe0f, an eye-controlled communication experience for people who have difficulty sp"
+          },
+          {
+            "author": "Nigar Naghdaliyeva",
+            "uid": "PzOYfKIT",
+            "day": 6,
+            "likes": 84,
+            "has_video": true,
+            "social_count": 1,
+            "category": "Build With Purpose",
+            "body_snippet": "\"\ud83e\udde0 MindLoop A vocabulary learning app that helps you remember new words through personalized audio l"
+          },
+          {
+            "author": "Case Ronquillo",
+            "uid": "ZOgiNApa",
+            "day": 14,
+            "likes": 80,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Community Favorite",
+            "body_snippet": "\"Excited to submit \"\"soundchecksf\"\" a new and organic way to discovery live music.\n\nLink:  https://s"
+          },
+          {
+            "author": "Carlos Fernandez",
+            "uid": "GBx8rOM7",
+            "day": 13,
+            "likes": 73,
+            "has_video": true,
+            "social_count": 0,
+            "category": "2nd Overall ($15K)",
+            "body_snippet": "\"I present Doodle Fonts, my entry for Config Makeathon. Making a custom typeface can be very complex"
+          },
+          {
+            "author": "Bene Brandhofer",
+            "uid": "Rzp2ee0Q",
+            "day": 12,
+            "likes": 23,
+            "has_video": true,
+            "social_count": 1,
+            "category": "Grand Prize ($50K)",
+            "body_snippet": "\"Visual Atlas Explore public domain image archives as navigable visual landscapes instead of searcha"
+          },
+          {
+            "author": "Halle Clark",
+            "uid": "yB4AS3GZ",
+            "day": 15,
+            "likes": 9,
+            "has_video": true,
+            "social_count": 0,
+            "category": "Build In Public",
+            "body_snippet": "\"Cartographer: Group Planning, Mapped Fairly Cartographer is a group planning app designed to make c"
+          },
+          {
+            "author": "Halle Clark",
+            "uid": "3112a34Y",
+            "day": 13,
+            "likes": 9,
+            "has_video": true,
+            "social_count": 1,
+            "category": "Build In Public",
+            "body_snippet": "\"Is mental noise getting in the way of your productivity? Say hello to Still Here.\u00a0 Still Here is a "
+          },
+          {
+            "author": "Talia Przybyszewski",
+            "uid": "njw60oEu",
+            "day": 2,
+            "likes": 6,
+            "has_video": false,
+            "social_count": 0,
+            "category": "Build In Public",
+            "body_snippet": "\"Day 1: The Idea Started with a question on Reddit: what places do you still think about that are go"
+          },
+          {
+            "author": "Talia Przybyszewski",
+            "uid": "x1qkUl9U",
+            "day": 7,
+            "likes": 5,
+            "has_video": false,
+            "social_count": 0,
+            "category": "Build In Public",
+            "body_snippet": "\"Day 6: Last Seen is spreading Last week I asked Reddit what closed places people still think about."
+          },
+          {
+            "author": "Bene Brandhofer",
+            "uid": "zVW83mmQ",
+            "day": 2,
+            "likes": 5,
+            "has_video": false,
+            "social_count": 0,
+            "category": "Grand Prize ($50K)",
+            "body_snippet": "\"I\u2019m really excited to create something nice for the Makeathon. I was just wondering how it works if"
+          },
+          {
+            "author": "Bene Brandhofer",
+            "uid": "bcD6qAFv",
+            "day": 9,
+            "likes": 1,
+            "has_video": false,
+            "social_count": 0,
+            "category": "Grand Prize ($50K)",
+            "body_snippet": "\"Hi everybody I\u2019m looking at all the wonderful submissions and wondering whether only projects publi"
+          }
+        ]
+      },
+      "q5_staff_presence": {
+        "total_staff_posts": 5,
+        "note": "Reply/comment data requires post-level API calls not yet implemented \u2014 staff interaction shown via post presence only.",
+        "staff_breakdown": [
+          {
+            "author": "Jan Mr\u00e1z",
+            "post_count": 3,
+            "days": [
+              6,
+              9,
+              14
+            ]
+          },
+          {
+            "author": "Gui Seiz",
+            "post_count": 2,
+            "days": [
+              2,
+              3
+            ]
+          }
+        ],
+        "participant_posts": 946,
+        "staff_pct_of_total": 0.5
+      }
+    }
+  },
+  "cross_edition": {
+    "q4_reach_proxy": {
+      "note": "Contra follower counts are not exposed in the public API. Social cross-posting count (0-5 platforms) is used as a social presence proxy.",
+      "winner_avg_social": 0.1,
+      "nonwin_avg_social": 0.1,
+      "winner_social_dist": {
+        "0": 23,
+        "1": 4,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "nonwin_social_dist": {
+        "0": 3912,
+        "1": 236,
+        "2": 34,
+        "3": 3,
+        "4": 0,
+        "5": 0
+      },
+      "per_edition": {
+        "Figma Make-a-thon (Sep 2025)": {
+          "winner_avg_social": 0,
+          "nonwin_avg_social": 0.0
+        },
+        "Figma Makeathon March 2026": {
+          "winner_avg_social": 0,
+          "nonwin_avg_social": 0.1
+        },
+        "Config Makeathon 2026": {
+          "winner_avg_social": 0.3,
+          "nonwin_avg_social": 0.2
+        }
+      }
+    },
+    "q6_criteria_alignment": [
+      {
+        "author": "Cara Ellis",
+        "edition": "Figma Make-a-thon (Sep 2025)",
+        "category": "1st ($50K)",
+        "day": 6,
+        "likes": 217,
+        "keywords_matched": [
+          "web"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"Poetry, love letters and shopping lists always read better when they're handwritten. \n\nThis is WEB "
+      },
+      {
+        "author": "Johannes Specht",
+        "edition": "Figma Make-a-thon (Sep 2025)",
+        "category": "3rd ($7.5K)",
+        "day": 6,
+        "likes": 65,
+        "keywords_matched": [
+          "figma"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"My final submission of Plan That Trip with a few minor corrections. \ud83e\udd17\n\nWe all know the struggle: yo"
+      },
+      {
+        "author": "Cara Ellis",
+        "edition": "Figma Make-a-thon (Sep 2025)",
+        "category": "1st ($50K)",
+        "day": 7,
+        "likes": 44,
+        "keywords_matched": [
+          "figma"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"My Figma Makeathon submission is up and there are a couple of easter eggs I haven't mentioned! If y"
+      },
+      {
+        "author": "Cara Ellis",
+        "edition": "Figma Make-a-thon (Sep 2025)",
+        "category": "1st ($50K)",
+        "day": 4,
+        "likes": 16,
+        "keywords_matched": [
+          "figma"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"I tested out  's genius Figma Makeathon entry today and the 8 ball spoke... \n\nAs instructed, here's"
+      },
+      {
+        "author": "Johannes Specht",
+        "edition": "Figma Make-a-thon (Sep 2025)",
+        "category": "3rd ($7.5K)",
+        "day": 4,
+        "likes": 3,
+        "keywords_matched": [
+          "figma",
+          "prototype"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.4,
+        "body_snippet": "\"We all know the struggle: you want to plan a trip with friends, but everyone has different ideas. T"
+      },
+      {
+        "author": "Lee Black",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Boundary Pushing",
+        "day": 30,
+        "likes": 222,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"Imagine conducting ambient music in mid-air. It's like Minority Report, but instead of solving crim"
+      },
+      {
+        "author": "Omayer  Zishan",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Excellence in Craft",
+        "day": 31,
+        "likes": 22,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"hey everyone, introducing Pulse. From wars and the Myanmar earthquake to a gas leak on your street "
+      },
+      {
+        "author": "Charlota Blun\u00e1rov\u00e1",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Best Overall",
+        "day": 31,
+        "likes": 21,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"breathe in air, breathe out flowers.  you know how every video call starts with 3 awkward minutes w"
+      },
+      {
+        "author": "Charlota Blun\u00e1rov\u00e1",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Best Overall",
+        "day": 28,
+        "likes": 173,
+        "keywords_matched": [
+          "craft"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"I built a multiplayer embroidery sampler for the internet. It's called Common Thread.\nIt's the firs"
+      },
+      {
+        "author": "Dann Petty",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Fan Favorite",
+        "day": 31,
+        "likes": 11,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"After I finish a design project,\nthe last thing I want to do is open Figma again just to make a pos"
+      },
+      {
+        "author": "Kiel Cole",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Excellence in Craft",
+        "day": 31,
+        "likes": 10,
+        "keywords_matched": [
+          "original"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"\ud83d\uddfc TOKYO is a fully interactive 16-bit world you can actually explore. \ud83c\udfae What's inside:\n\u2192 A cinemati"
+      },
+      {
+        "author": "Lee Black",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Boundary Pushing",
+        "day": 28,
+        "likes": 83,
+        "keywords_matched": [
+          "interaction"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"Imagine treating scroll like an instrument, not a wheel. For\u00a0#FigmaMakeathon\u00a0I built\u00a0ScrollFolio\u00a0in"
+      },
+      {
+        "author": "Paige Latimer",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Reimagining",
+        "day": 31,
+        "likes": 7,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"vintage photobooths are having a moment, and i\u2019m obsessed. but sometimes the booth isn\u2019t nearby\u2026 an"
+      },
+      {
+        "author": "Aleyna \u00c7atak",
+        "edition": "Figma Makeathon March 2026",
+        "category": "New Interaction",
+        "day": 31,
+        "likes": 4,
+        "keywords_matched": [
+          "interaction"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"What if you had to blow a kiss to your phone instead of tapping? \ud83d\udc8b  Let me introduce:  Face-to-Navi"
+      },
+      {
+        "author": "Bukola Ayodele Jimoh",
+        "edition": "Figma Makeathon March 2026",
+        "category": "Excellence in Craft",
+        "day": 31,
+        "likes": 1,
+        "keywords_matched": [
+          "visual"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"I built AURA \u2013 Weather Synthesizer \ud83c\udf26\ufe0f\ud83c\udfb5 Type any city. AURA turns real-time weather data into living"
+      },
+      {
+        "author": "Lee Black",
+        "edition": "Config Makeathon 2026",
+        "category": "Innovative Workflow",
+        "day": 15,
+        "likes": 156,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"Super happy to share my entry for the Figma Makeathon \ud83d\ude0a\n\nConnected Earth. \n\nLanguage separates us. "
+      },
+      {
+        "author": "Nigar Naghdaliyeva",
+        "edition": "Config Makeathon 2026",
+        "category": "Build With Purpose",
+        "day": 15,
+        "likes": 119,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"I designed EyeText \ud83d\udc41\ufe0f, an eye-controlled communication experience for people who have difficulty sp"
+      },
+      {
+        "author": "Case Ronquillo",
+        "edition": "Config Makeathon 2026",
+        "category": "Community Favorite",
+        "day": 14,
+        "likes": 80,
+        "keywords_matched": [
+          "community"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"Excited to submit \"\"soundchecksf\"\" a new and organic way to discovery live music.\n\nLink:  https://s"
+      },
+      {
+        "author": "Carlos Fernandez",
+        "edition": "Config Makeathon 2026",
+        "category": "2nd Overall ($15K)",
+        "day": 13,
+        "likes": 73,
+        "keywords_matched": [
+          "config"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"I present Doodle Fonts, my entry for Config Makeathon. Making a custom typeface can be very complex"
+      },
+      {
+        "author": "Halle Clark",
+        "edition": "Config Makeathon 2026",
+        "category": "Build In Public",
+        "day": 15,
+        "likes": 9,
+        "keywords_matched": [
+          "config"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"Cartographer: Group Planning, Mapped Fairly Cartographer is a group planning app designed to make c"
+      },
+      {
+        "author": "Halle Clark",
+        "edition": "Config Makeathon 2026",
+        "category": "Build In Public",
+        "day": 13,
+        "likes": 9,
+        "keywords_matched": [
+          "config"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"Is mental noise getting in the way of your productivity? Say hello to Still Here.\u00a0 Still Here is a "
+      },
+      {
+        "author": "Bene Brandhofer",
+        "edition": "Config Makeathon 2026",
+        "category": "Grand Prize ($50K)",
+        "day": 12,
+        "likes": 23,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"Visual Atlas Explore public domain image archives as navigable visual landscapes instead of searcha"
+      },
+      {
+        "author": "Nigar Naghdaliyeva",
+        "edition": "Config Makeathon 2026",
+        "category": "Build With Purpose",
+        "day": 6,
+        "likes": 84,
+        "keywords_matched": [
+          "workflow"
+        ],
+        "keywords_total": 5,
+        "match_score": 0.2,
+        "body_snippet": "\"\ud83e\udde0 MindLoop A vocabulary learning app that helps you remember new words through personalized audio l"
+      },
+      {
+        "author": "Bene Brandhofer",
+        "edition": "Config Makeathon 2026",
+        "category": "Grand Prize ($50K)",
+        "day": 9,
+        "likes": 1,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"Hi everybody I\u2019m looking at all the wonderful submissions and wondering whether only projects publi"
+      },
+      {
+        "author": "Talia Przybyszewski",
+        "edition": "Config Makeathon 2026",
+        "category": "Build In Public",
+        "day": 7,
+        "likes": 5,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"Day 6: Last Seen is spreading Last week I asked Reddit what closed places people still think about."
+      },
+      {
+        "author": "Bene Brandhofer",
+        "edition": "Config Makeathon 2026",
+        "category": "Grand Prize ($50K)",
+        "day": 2,
+        "likes": 5,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"I\u2019m really excited to create something nice for the Makeathon. I was just wondering how it works if"
+      },
+      {
+        "author": "Talia Przybyszewski",
+        "edition": "Config Makeathon 2026",
+        "category": "Build In Public",
+        "day": 2,
+        "likes": 6,
+        "keywords_matched": [],
+        "keywords_total": 5,
+        "match_score": 0.0,
+        "body_snippet": "\"Day 1: The Idea Started with a question on Reddit: what places do you still think about that are go"
+      }
+    ]
+  }
+}
