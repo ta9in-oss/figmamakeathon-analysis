@@ -1,0 +1,185 @@
+{
+  "total_entries": 631,
+  "total_winners": 15,
+  "winner_avg_engagement": 99.7,
+  "non_winner_avg_engagement": 7.3,
+  "winner_avg_post_day": 17.3,
+  "non_winner_avg_post_day": 7.6,
+  "winner_avg_social": 1,
+  "non_winner_avg_social": 0,
+  "winner_video_pct": 66.7,
+  "non_winner_video_pct": 12.8,
+  "editions": {
+    "Figma Make-a-thon (Sep 2025)": {
+      "edition": "Figma Make-a-thon (Sep 2025)",
+      "total_entries": 590,
+      "total_winners": 5,
+      "winner_avg_post_day": 14.4,
+      "non_winner_avg_post_day": 6.7,
+      "winner_avg_engagement": 0,
+      "non_winner_avg_engagement": 0.3,
+      "winner_avg_likes": 0,
+      "non_winner_avg_likes": 0.3,
+      "winner_avg_social": 0,
+      "non_winner_avg_social": 0,
+      "winner_video_pct": 40.0,
+      "non_winner_video_pct": 10.3,
+      "winner_entries": [
+        {
+          "author": "",
+          "project": "1st ($50K)",
+          "likes": 0,
+          "days": 34.0,
+          "social": 0,
+          "has_video": true
+        },
+        {
+          "author": "",
+          "project": "1st ($50K)",
+          "likes": 0,
+          "days": 19.0,
+          "social": 0,
+          "has_video": true
+        },
+        {
+          "author": "",
+          "project": "1st ($50K)",
+          "likes": 0,
+          "days": 5.0,
+          "social": 0,
+          "has_video": false
+        },
+        {
+          "author": "",
+          "project": "3rd ($7.5K)",
+          "likes": 0,
+          "days": 5.0,
+          "social": 0,
+          "has_video": false
+        },
+        {
+          "author": "Cara Ellis",
+          "project": "1st ($50K)",
+          "likes": 0,
+          "days": 9.0,
+          "social": 0,
+          "has_video": false
+        }
+      ]
+    },
+    "Figma Makeathon March 2026": {
+      "edition": "Figma Makeathon March 2026",
+      "total_entries": 22,
+      "total_winners": 3,
+      "winner_avg_post_day": 29.3,
+      "non_winner_avg_post_day": 33.1,
+      "winner_avg_engagement": 282,
+      "non_winner_avg_engagement": 106.8,
+      "winner_avg_likes": 158.7,
+      "non_winner_avg_likes": 53.7,
+      "winner_avg_social": 0.7,
+      "non_winner_avg_social": 0,
+      "winner_video_pct": 66.7,
+      "non_winner_video_pct": 47.4,
+      "winner_entries": [
+        {
+          "author": "Anita Autorino",
+          "project": "Best Overall",
+          "likes": 32,
+          "days": 45.0,
+          "social": 0,
+          "has_video": false
+        },
+        {
+          "author": "Lee Black",
+          "project": "Boundary Pushing",
+          "likes": 222,
+          "days": 29.0,
+          "social": 0,
+          "has_video": true
+        },
+        {
+          "author": "Lee Black",
+          "project": "Boundary Pushing",
+          "likes": 222,
+          "days": 14.0,
+          "social": 2,
+          "has_video": true
+        }
+      ]
+    },
+    "Config Makeathon 2026": {
+      "edition": "Config Makeathon 2026",
+      "total_entries": 19,
+      "total_winners": 7,
+      "winner_avg_post_day": 14.3,
+      "non_winner_avg_post_day": 14.4,
+      "winner_avg_engagement": 92.7,
+      "non_winner_avg_engagement": 194.6,
+      "winner_avg_likes": 67,
+      "non_winner_avg_likes": 89.1,
+      "winner_avg_social": 1.9,
+      "non_winner_avg_social": 0,
+      "winner_video_pct": 85.7,
+      "non_winner_video_pct": 83.3,
+      "winner_entries": [
+        {
+          "author": "Alesia Boiko",
+          "project": "2nd Overall ($15K)",
+          "likes": 10,
+          "days": 21.0,
+          "social": 0,
+          "has_video": false
+        },
+        {
+          "author": "Bene Brandhofer",
+          "project": "Grand Prize ($50K)",
+          "likes": 23,
+          "days": 11.0,
+          "social": 1,
+          "has_video": true
+        },
+        {
+          "author": "Carlos Fernandez",
+          "project": "2nd Overall ($15K)",
+          "likes": 73,
+          "days": 13.0,
+          "social": 1,
+          "has_video": true
+        },
+        {
+          "author": "Nigar Naghdaliyeva",
+          "project": "Build With Purpose ($10K)",
+          "likes": 119,
+          "days": 14.0,
+          "social": 2,
+          "has_video": true
+        },
+        {
+          "author": "Lee Black",
+          "project": "Innovative Workflow ($10K)",
+          "likes": 156,
+          "days": 15.0,
+          "social": 3,
+          "has_video": true
+        },
+        {
+          "author": "Halle Clark",
+          "project": "Build In Public ($10K)",
+          "likes": 8,
+          "days": 13.0,
+          "social": 4,
+          "has_video": true
+        },
+        {
+          "author": "Case Ronquillo",
+          "project": "Community Favorite ($5K)",
+          "likes": 80,
+          "days": 13.0,
+          "social": 2,
+          "has_video": true
+        }
+      ]
+    }
+  }
+}

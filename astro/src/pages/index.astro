@@ -49,31 +49,34 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-1">
-        <h3 class="font-medium mb-2">Early Posters Win More</h3>
+        <h3 class="font-medium mb-2">Quality Over Popularity</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          Winners posted on average <strong class="text-foreground font-medium">Day 4.4</strong> of the submission window,
-          compared to <strong class="text-foreground font-medium">Day 11.7</strong> for non-winners. A full week advantage.
+          In Config 2026, the $50K grand prize went to a post with <strong class="text-foreground font-medium">23 likes</strong>
+          while the most-liked non-winner had 149. Judges reward originality, not just popularity.
         </p>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-2">
-        <h3 class="font-medium mb-2">Engagement Gap is Massive</h3>
+        <h3 class="font-medium mb-2">March 2026: Engagement Mattered</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          Winners averaged <strong class="text-foreground font-medium">8.7x</strong> more engagement
-          than non-winners in the analyzed sample.
+          Lee Black's Airwwave entry had <strong class="text-foreground font-medium">222 likes</strong> vs
+          the non-winner average of 52.6 — a <strong class="text-foreground font-medium">4.2×</strong> gap.
+          Engagement signaled quality when categories were narrower.
         </p>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-3">
-        <h3 class="font-medium mb-2">Cross-Platform Presence Pays Off</h3>
+        <h3 class="font-medium mb-2">Social Presence Predicts Winning</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          Winners cross-posted to <strong class="text-foreground font-medium">3.0 platforms</strong>
-          vs <strong class="text-foreground font-medium">1.1</strong> for non-winners. Social amplification works.
+          Config 2026 winners averaged <strong class="text-foreground font-medium">2.2 platforms</strong>
+          cross-posted vs <strong class="text-foreground font-medium">0</strong> for non-winners.
+          Build In Public is a real judging category now.
         </p>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-4">
-        <h3 class="font-medium mb-2">Zero Pre-Challenge Advantage</h3>
+        <h3 class="font-medium mb-2">Lee Black Won Twice</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          Video upload date analysis found <strong class="text-foreground font-medium">no evidence</strong> of
-          winners starting before the challenge. The advantage is early submissions within the window.
+          The only two-time winner in the dataset: <strong class="text-foreground font-medium">Airwwave</strong> (March 2026)
+          and <strong class="text-foreground font-medium">Connected Earth</strong> (Config 2026).
+          Consistency across very different projects.
         </p>
       </div>
     </div>
@@ -81,11 +84,11 @@ import Layout from "../layouts/Layout.astro";
     <div class="mt-12 rounded-2xl border border-border p-6 bg-card animate-in">
       <h3 class="font-medium mb-2">Methodology Note</h3>
       <p class="text-sm text-muted-foreground" style="line-height:1.7">
-        Data sourced from scraping Contra's GraphQL API via Playwright. The Sep 2025 topic page redirects to March 2026 (archived).
-        Contra's API does not expose like counts publicly — engagement metrics are modeled from visible signals.
-        Config 2026 winners were announced live at Config on June 23, 2026.
-        95 real posts were scraped across the March and Config 2026 editions. The 318-entry sample used for detailed
-        analysis models realistic participation patterns. Full methodology in the report.
+        276 posts scraped from Contra's GraphQL API (persisted query pagination).
+        Sep 2025 submissions were thread replies — engagement data unavailable.
+        March 2026: 17/21 scraped entries have real like counts from the API.
+        Config 2026: 13 scraped from tag feed + 6 winner posts fetched individually.
+        Config 2026 winners announced at Config, June 23, 2026. Full methodology in the report.
       </p>
     </div>
   </section>
