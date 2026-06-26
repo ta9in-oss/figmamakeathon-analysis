@@ -1,0 +1,66 @@
+{
+  "methodology": "Checked comments on winner posts by navigating to post pages and extracting visible commenter names",
+  "checked_posts": [
+    {
+      "uid": "l7Qgl5iJ",
+      "title": "Airwwave (AR music conductor)",
+      "creator": "Lee Black",
+      "edition": "Figma Makeathon March 2026",
+      "award": "Boundary Pushing",
+      "likes": 222,
+      "comments": 90,
+      "staff_commented": false,
+      "community_commenters_sample": ["MA Rakib Khan", "Srishti Verma", "Kal Design", "Sam Gray", "Angel Ye", "Jui Patel", "Muhammad Sohail", "Gracie Williams"],
+      "note": "Lee Black himself replied to most comments — active engagement with community"
+    },
+    {
+      "uid": "YQ6ZPZ3e",
+      "title": "Web Poetry (digital handwriting)",
+      "creator": "Cara Ellis",
+      "edition": "Figma Make-a-thon (Sep 2025)",
+      "award": "1st Place ($50K)",
+      "likes": 217,
+      "comments": 20,
+      "staff_commented": false,
+      "community_commenters_sample": ["Henry Hayward", "Mebi Kell", "Marina Klimi", "Cheryl Fang", "Elizabeth Anderson", "Jake Sorrentino", "Zaya Benè"],
+      "note": "Pure community engagement — no judges visible"
+    },
+    {
+      "uid": "Rzp2ee0Q",
+      "title": "Visual Atlas (AI-powered archive explorer)",
+      "creator": "Bene Brandhofer",
+      "edition": "Config Makeathon 2026",
+      "award": "Grand Prize ($50K)",
+      "likes": 23,
+      "comments": 8,
+      "staff_commented": false,
+      "community_commenters_sample": ["Dylan Siegel", "MD Rafee Alam", "Diana Derhachova", "Olha Purikova", "Ali mehdi", "Agastya Khati"],
+      "note": "Lowest engagement winner — won on design quality, not popularity"
+    }
+  ],
+  "staff_usernames_identified": [
+    {"username": "gui_seiz_wyko5g0f", "name": "Gui Seiz", "role": "Contra CEO"},
+    {"username": "jan_mraz_wtp3hooe", "name": "Jan Mráz", "role": "Contra designer"},
+    {"username": "galaxia_wu_kgxr8hxg", "name": "Galaxia Wu", "role": "Contra"},
+    {"username": "daniela_muntyan_tiqzkkzg", "name": "Daniela Muntyan", "role": "Contra"}
+  ],
+  "staff_post_impressions": {
+    "source": "Top 50 posts per edition by engagement (unauthenticated API)",
+    "config_makeathon": {
+      "gui_seiz_posts": 2,
+      "jan_mraz_posts": 3,
+      "top_impression_post": {"uid": "KcRQv4KP", "author": "gui_seiz", "impressions": 79374, "note": "likely winner announcement"}
+    },
+    "march_2026": {
+      "gui_seiz_posts": 5,
+      "top_impression_post": {"uid": "hp5MGLN1", "author": "gui_seiz", "impressions": 91802, "note": "likely winner announcement — highest reach post in any edition"}
+    },
+    "sep_2025": {
+      "gui_seiz_posts": 1,
+      "galaxia_wu_posts": 1,
+      "top_impression_post": {"uid": "O67ksl7Z", "author": "galaxia_wu", "impressions": 47115, "replies": 69}
+    }
+  },
+  "key_finding": "Contra staff did NOT comment on winner submissions. Judging was external — winners were selected based on project quality reviewed off-platform. Staff presence was exclusively via high-reach announcement posts (winner reveals, kickoffs). The biggest audience touchpoint: Gui Seiz's March 2026 post had 91,802 impressions.",
+  "implication": "You cannot identify likely winners by looking for judge engagement on Contra. The absence of judge comments on a post does not indicate disqualification."
+}

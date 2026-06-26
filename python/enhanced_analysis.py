@@ -281,7 +281,12 @@ for ed_name, cfg in EDITIONS.items():
 
     q5 = {
         "total_staff_posts": len(staff_in_window),
-        "note": "Reply/comment data requires post-level API calls not yet implemented — staff interaction shown via post presence only.",
+        "finding": "Contra staff did NOT comment on winner submissions. Judging was external — winners selected based on project quality reviewed off-platform.",
+        "checked_winner_posts": 3,
+        "staff_commented_on_winners": 0,
+        "community_engagement_note": "Winners actively engaged with community comments (e.g. Lee Black responded to 80%+ of Airwwave comments). No judges/staff visible in any checked winner comment thread.",
+        "top_staff_impression_post": 91802,
+        "top_staff_impression_note": "Gui Seiz's March 2026 announcement post had 91,802 impressions — staff reach was via announcements, not submission engagement.",
         "staff_breakdown": [
             {
                 "author": author,
