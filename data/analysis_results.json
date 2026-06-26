@@ -1,183 +1,335 @@
 {
-  "total_entries": 631,
-  "total_winners": 15,
-  "winner_avg_engagement": 99.7,
-  "non_winner_avg_engagement": 7.3,
-  "winner_avg_post_day": 17.3,
-  "non_winner_avg_post_day": 7.6,
-  "winner_avg_social": 1,
-  "non_winner_avg_social": 0,
-  "winner_video_pct": 66.7,
-  "non_winner_video_pct": 12.8,
+  "total_in_window": 4219,
+  "total_winners": 27,
+  "total_non_winners": 4192,
+  "winner_avg_likes": 54.4,
+  "non_winner_avg_likes": 7.1,
+  "engagement_ratio": 7.7,
+  "winner_avg_day": 16.8,
+  "non_winner_avg_day": 15.7,
+  "winner_avg_social": 0.1,
+  "non_winner_avg_social": 0.1,
+  "winner_video_pct": 70.4,
+  "non_winner_video_pct": 36.2,
   "editions": {
     "Figma Make-a-thon (Sep 2025)": {
-      "edition": "Figma Make-a-thon (Sep 2025)",
-      "total_entries": 590,
-      "total_winners": 5,
-      "winner_avg_post_day": 14.4,
-      "non_winner_avg_post_day": 6.7,
-      "winner_avg_engagement": 0,
-      "non_winner_avg_engagement": 0.3,
-      "winner_avg_likes": 0,
-      "non_winner_avg_likes": 0.3,
-      "winner_avg_social": 0,
-      "non_winner_avg_social": 0,
-      "winner_video_pct": 40.0,
-      "non_winner_video_pct": 10.3,
-      "winner_entries": [
+      "total": 1773,
+      "winners": {
+        "n": 5,
+        "avg_likes": 69,
+        "med_likes": 44,
+        "avg_eng": 94.6,
+        "avg_day": 5.4,
+        "med_day": 6.0,
+        "avg_social": 0,
+        "video_pct": 40.0,
+        "top_likes": 217
+      },
+      "non_winners": {
+        "n": 1768,
+        "avg_likes": 4.1,
+        "med_likes": 1.0,
+        "avg_eng": 5.9,
+        "avg_day": 6.2,
+        "med_day": 7.0,
+        "avg_social": 0.0,
+        "video_pct": 7.5,
+        "top_likes": 222
+      },
+      "top_posts": [
         {
-          "author": "",
-          "project": "1st ($50K)",
-          "likes": 0,
-          "days": 34.0,
-          "social": 0,
-          "has_video": true
+          "author": "Anushriya Bhardwaj",
+          "likes": 222,
+          "day": "3",
+          "is_winner": false,
+          "category": "",
+          "body": "\"This is gonna be your personal punching bag here. And I'm excited to work on a better AI-powered version of it during t"
         },
         {
-          "author": "",
-          "project": "1st ($50K)",
-          "likes": 0,
-          "days": 19.0,
-          "social": 0,
-          "has_video": true
-        },
-        {
-          "author": "",
-          "project": "1st ($50K)",
-          "likes": 0,
-          "days": 5.0,
-          "social": 0,
-          "has_video": false
-        },
-        {
-          "author": "",
-          "project": "3rd ($7.5K)",
-          "likes": 0,
-          "days": 5.0,
-          "social": 0,
-          "has_video": false
+          "author": "Jorre",
+          "likes": 218,
+          "day": "7",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Last day of the MakeAthon \ud83d\ude80 I pushed one more update to  Figma Snake  \ud83d\udc0d\n\u2728 Global stats are live \u2014 see how many vectors "
         },
         {
           "author": "Cara Ellis",
-          "project": "1st ($50K)",
-          "likes": 0,
-          "days": 9.0,
-          "social": 0,
-          "has_video": false
+          "likes": 217,
+          "day": "6",
+          "is_winner": true,
+          "category": "1st ($50K)",
+          "body": "\"Poetry, love letters and shopping lists always read better when they're handwritten. \n\nThis is WEB POETRY, a digital ca"
+        },
+        {
+          "author": "Double Glitch",
+          "likes": 160,
+          "day": "8",
+          "is_winner": false,
+          "category": "",
+          "body": "\"The final day update for the falling sand simulation. Create life... or destroy it\n\ud83c\udf31  Check it out  \ud83d\udca5\""
+        },
+        {
+          "author": "Nuel Wogundu",
+          "likes": 152,
+          "day": "2",
+          "is_winner": false,
+          "category": "",
+          "body": "\"My first Figma Make was a simple Tic-tac-toe game with a minimal interface, I added some few features like voice comman"
+        },
+        {
+          "author": "Rahul Chakraborty",
+          "likes": 127,
+          "day": "6",
+          "is_winner": false,
+          "category": "",
+          "body": "\"I created this fun device, Figtron to generate infinite Retro UIs with sci-fi data visualisations \u2013  https://figtron.fi"
+        },
+        {
+          "author": "Ismel Figueroa",
+          "likes": 117,
+          "day": "7",
+          "is_winner": false,
+          "category": "",
+          "body": "Maybe is just me \ud83d\ude39"
+        },
+        {
+          "author": "Cheryl Fang",
+          "likes": 115,
+          "day": "3",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Feeling anxious about not getting much done today? \ud83c\udf31 Remember, no step is too small. I designed A Little Step with Figm"
+        },
+        {
+          "author": "Daniela Muntyan",
+          "likes": 96,
+          "day": "2",
+          "is_winner": false,
+          "category": "",
+          "body": "\"The Figma Make-a-thon launches today! \n\nWhat will you Make?\""
+        },
+        {
+          "author": "Stacy \u00b7 Heed Collective",
+          "likes": 88,
+          "day": "8",
+          "is_winner": false,
+          "category": "",
+          "body": "\"It\u2019s not my invention and not even a new idea, but this little game has saved me so many times when I felt anxious and "
         }
       ]
     },
     "Figma Makeathon March 2026": {
-      "edition": "Figma Makeathon March 2026",
-      "total_entries": 22,
-      "total_winners": 3,
-      "winner_avg_post_day": 29.3,
-      "non_winner_avg_post_day": 33.1,
-      "winner_avg_engagement": 282,
-      "non_winner_avg_engagement": 106.8,
-      "winner_avg_likes": 158.7,
-      "non_winner_avg_likes": 53.7,
-      "winner_avg_social": 0.7,
-      "non_winner_avg_social": 0,
-      "winner_video_pct": 66.7,
-      "non_winner_video_pct": 47.4,
-      "winner_entries": [
+      "total": 1497,
+      "winners": {
+        "n": 10,
+        "avg_likes": 55.4,
+        "med_likes": 16.0,
+        "avg_eng": 94.4,
+        "avg_day": 30.3,
+        "med_day": 31.0,
+        "avg_social": 0,
+        "video_pct": 90.0,
+        "top_likes": 222
+      },
+      "non_winners": {
+        "n": 1487,
+        "avg_likes": 9.3,
+        "med_likes": 4,
+        "avg_eng": 14.4,
+        "avg_day": 30.3,
+        "med_day": 31.0,
+        "avg_social": 0.1,
+        "video_pct": 56.2,
+        "top_likes": 256
+      },
+      "top_posts": [
         {
-          "author": "Anita Autorino",
-          "project": "Best Overall",
-          "likes": 32,
-          "days": 45.0,
-          "social": 0,
-          "has_video": false
+          "author": "V\u00edtrea Studio",
+          "likes": 256,
+          "day": "31",
+          "is_winner": false,
+          "category": "",
+          "body": "\"My entry for the Figma Makeathon: Procedural Spring. A procedural tree generator with default styles based on Figma col"
         },
         {
           "author": "Lee Black",
-          "project": "Boundary Pushing",
           "likes": 222,
-          "days": 29.0,
-          "social": 0,
-          "has_video": true
+          "day": "30",
+          "is_winner": true,
+          "category": "Boundary Pushing",
+          "body": "\"Imagine conducting ambient music in mid-air. It's like Minority Report, but instead of solving crimes you\u2019re just gentl"
         },
         {
-          "author": "Lee Black",
-          "project": "Boundary Pushing",
-          "likes": 222,
-          "days": 14.0,
-          "social": 2,
-          "has_video": true
+          "author": "Rudy Agnel",
+          "likes": 206,
+          "day": "28",
+          "is_winner": false,
+          "category": "",
+          "body": "\"It\u2019s been a long time coming, but I\u2019m finally back Participating in the  Figma  X  Contra  Challenge. #FigmaMakeathon T"
+        },
+        {
+          "author": "Charlota Blun\u00e1rov\u00e1",
+          "likes": 173,
+          "day": "28",
+          "is_winner": true,
+          "category": "Best Overall",
+          "body": "\"I built a multiplayer embroidery sampler for the internet. It's called Common Thread.\nIt's the first thing I've ever vi"
+        },
+        {
+          "author": "HydraFX6  .",
+          "likes": 165,
+          "day": "29",
+          "is_winner": false,
+          "category": "",
+          "body": "\"It's been a wild ride, but I'm finally in! Participating in the #FigmaMakeathon $100K challenge.This is CosmoVoyage   a"
+        },
+        {
+          "author": "Alesia Boiko",
+          "likes": 158,
+          "day": "30",
+          "is_winner": false,
+          "category": "",
+          "body": "\"\ud83d\udd25\ud83d\udd25\ud83d\udd25 LIVE PROJECT - TRY IT OUT \ud83d\udd25\ud83d\udd25\ud83d\udd25\n https://colorstory.figma.site  \n\nMaybe the future of the web isn\u2019t more UI... It\u2019s M"
+        },
+        {
+          "author": "Gui Seiz",
+          "likes": 148,
+          "day": "32",
+          "is_winner": false,
+          "category": "",
+          "body": "\"That's a wrap! Submissions are officially closed. \n\nStay tuned for a winners announcement in the coming weeks.\""
+        },
+        {
+          "author": "Matteo Salvati",
+          "likes": 145,
+          "day": "30",
+          "is_winner": false,
+          "category": "",
+          "body": "\"I collect stamps. But cutting them out of packaging means destroying the original. So I built Figmatelia \u2014 a hole-punch"
+        },
+        {
+          "author": "Cara Ellis",
+          "likes": 139,
+          "day": "30",
+          "is_winner": false,
+          "category": "",
+          "body": "\"CANVAS  \u208a\u2729\u2027\u208a\u02da\u0c68\u09ce\u02da\u208a\u2729\u2027\u208a\n\nAn infinite canvas of anonymous, asynchronous conversations between strangers and friends.\u00a0\n\nInsp"
+        },
+        {
+          "author": "Carlos Dami\u00e1n",
+          "likes": 135,
+          "day": "27",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Noodles  is a web application for image and video processing based on visual flows (node-based). You connect nodes by d"
         }
       ]
     },
     "Config Makeathon 2026": {
-      "edition": "Config Makeathon 2026",
-      "total_entries": 19,
-      "total_winners": 7,
-      "winner_avg_post_day": 14.3,
-      "non_winner_avg_post_day": 14.4,
-      "winner_avg_engagement": 92.7,
-      "non_winner_avg_engagement": 194.6,
-      "winner_avg_likes": 67,
-      "non_winner_avg_likes": 89.1,
-      "winner_avg_social": 1.9,
-      "non_winner_avg_social": 0,
-      "winner_video_pct": 85.7,
-      "non_winner_video_pct": 83.3,
-      "winner_entries": [
+      "total": 949,
+      "winners": {
+        "n": 12,
+        "avg_likes": 47.5,
+        "med_likes": 16.0,
+        "avg_eng": 95.3,
+        "avg_day": 10.2,
+        "med_day": 12.5,
+        "avg_social": 0.3,
+        "video_pct": 66.7,
+        "top_likes": 156
+      },
+      "non_winners": {
+        "n": 937,
+        "avg_likes": 9.3,
+        "med_likes": 3,
+        "avg_eng": 18.6,
+        "avg_day": 10.7,
+        "med_day": 12.0,
+        "avg_social": 0.2,
+        "video_pct": 58.6,
+        "top_likes": 380
+      },
+      "top_posts": [
+        {
+          "author": "Falcon Studio",
+          "likes": 380,
+          "day": "13",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Proud to share my submission for the #configMakeathon \ud83e\udd8b Design has one job \u2014 make people feel something before they thi"
+        },
         {
           "author": "Alesia Boiko",
-          "project": "2nd Overall ($15K)",
-          "likes": 10,
-          "days": 21.0,
-          "social": 0,
-          "has_video": false
+          "likes": 272,
+          "day": "14",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Hi creatives! \ud83d\udc4b\nFor #ConfigMakeathon, I created SLAMBOOK for Designers \u2728\n\n https://slambook.figma.site   It's inspired "
         },
         {
-          "author": "Bene Brandhofer",
-          "project": "Grand Prize ($50K)",
-          "likes": 23,
-          "days": 11.0,
-          "social": 1,
-          "has_video": true
-        },
-        {
-          "author": "Carlos Fernandez",
-          "project": "2nd Overall ($15K)",
-          "likes": 73,
-          "days": 13.0,
-          "social": 1,
-          "has_video": true
-        },
-        {
-          "author": "Nigar Naghdaliyeva",
-          "project": "Build With Purpose ($10K)",
-          "likes": 119,
-          "days": 14.0,
-          "social": 2,
-          "has_video": true
+          "author": "Jan Mr\u00e1z",
+          "likes": 169,
+          "day": "6",
+          "is_winner": false,
+          "category": "",
+          "body": "\"How to design Figma prototypes with Claude Opus\n\n\u00a0\ud83d\udc49 Can't wait to see your work in Config Makeathon!\""
         },
         {
           "author": "Lee Black",
-          "project": "Innovative Workflow ($10K)",
           "likes": 156,
-          "days": 15.0,
-          "social": 3,
-          "has_video": true
+          "day": "15",
+          "is_winner": true,
+          "category": "Innovative Workflow",
+          "body": "\"Super happy to share my entry for the Figma Makeathon \ud83d\ude0a\n\nConnected Earth. \n\nLanguage separates us. Sound connects us.\n\n"
         },
         {
-          "author": "Halle Clark",
-          "project": "Build In Public ($10K)",
-          "likes": 8,
-          "days": 13.0,
-          "social": 4,
-          "has_video": true
+          "author": "Mary Clements",
+          "likes": 138,
+          "day": "15",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Introducing PUNCH IT! \ud83c\udf89 \n\nI'm so excited to share my final submission to the  #ConfigMakeathon  !!\n\nThe prompt was to c"
         },
         {
-          "author": "Case Ronquillo",
-          "project": "Community Favorite ($5K)",
-          "likes": 80,
-          "days": 13.0,
-          "social": 2,
-          "has_video": true
+          "author": "Melissa Kwee",
+          "likes": 136,
+          "day": "15",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Little Voices  is a keepsake of your kid's voice. It's for the silly, fleeting, unrepeatable bits, before they grow out"
+        },
+        {
+          "author": "Devon Bulgin",
+          "likes": 131,
+          "day": "12",
+          "is_winner": false,
+          "category": "",
+          "body": "\"For the Config Makeathon, I've built Interdimensional Snake, an experimental game that blends beautiful mathematics wit"
+        },
+        {
+          "author": "Isum Enuka",
+          "likes": 126,
+          "day": "8",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Did you know a tornado formed the year you were born?\n\nNot a real one. A data one.\n\nType your birth year. Watch the sto"
+        },
+        {
+          "author": "Nigar Naghdaliyeva",
+          "likes": 119,
+          "day": "15",
+          "is_winner": true,
+          "category": "Build With Purpose",
+          "body": "\"I designed EyeText \ud83d\udc41\ufe0f, an eye-controlled communication experience for people who have difficulty speaking or using thei"
+        },
+        {
+          "author": "Seth Harris",
+          "likes": 117,
+          "day": "1",
+          "is_winner": false,
+          "category": "",
+          "body": "\"Get ready for the Config Makeathon! There is $100,000 worth of prizes on the line. Reminder: The pre-registration perio"
         }
       ]
     }

@@ -9,93 +9,97 @@ import RecapChart from "../components/charts/RecapChart";
   <article class="mx-auto max-w-3xl px-6 py-16">
     <header class="mb-16 animate-in">
       <h1 class="text-4xl font-extrabold tracking-tight mb-4 leading-tight">What Separates Winners from Everyone Else?</h1>
-      <p class="text-muted-foreground text-lg">A data analysis across three Figma × Contra Makeathon editions — June 2026</p>
+      <p class="text-muted-foreground text-lg">A data analysis of 4,219 real posts across three Figma × Contra Makeathon editions — June 2026</p>
     </header>
 
     <section class="mb-16 animate-in animate-in-delay-1">
-      <h2 class="text-xl font-bold mb-4 text-foreground">The Pattern — And Where It Breaks</h2>
+      <h2 class="text-xl font-bold mb-4 text-foreground">The Core Pattern</h2>
       <p class="text-muted-foreground leading-relaxed mb-4">
-        After analyzing <strong class="text-foreground font-semibold">276 scraped posts</strong> across three editions,
-        the picture is more nuanced than expected. Engagement predicted winning in March 2026
-        — Lee Black's Airwwave entry had <strong class="text-foreground font-semibold">4.2× more likes</strong> than the
-        average non-winner. But in Config 2026, the $50K grand prize went to a post with only 23 likes
-        while non-winners averaged 83. What changed? The judging criteria expanded to include a
-        dedicated "Build In Public" category.
+        After scraping <strong class="text-foreground font-semibold">6,030 posts</strong> from Contra's API
+        and filtering to 4,219 in-window submissions across three editions, one signal dominates:
+        winners generate significantly more engagement than the crowd. Across all editions,
+        winning posts averaged <strong class="text-foreground font-semibold">54.4 likes</strong> versus
+        <strong class="text-foreground font-semibold">7.1</strong> for non-winners — a
+        <strong class="text-foreground font-semibold">7.7× gap</strong>.
       </p>
       <ul class="space-y-2 text-muted-foreground ml-4">
-        <li>March 2026 engagement gap: <strong class="text-foreground font-semibold">4.2×</strong> more likes for confirmed winner vs non-winner avg</li>
-        <li>Config 2026 social presence: <strong class="text-foreground font-semibold">2.2 vs 0</strong> avg platforms cross-posted (winners vs non-winners)</li>
-        <li>Video presence across editions: <strong class="text-foreground font-semibold">85%+</strong> of Config 2026 winners included a video demo</li>
-        <li>Lee Black won twice: <strong class="text-foreground font-semibold">Airwwave</strong> (March 2026) and <strong class="text-foreground font-semibold">Connected Earth</strong> (Config 2026)</li>
+        <li>Engagement gap: <strong class="text-foreground font-semibold">7.7×</strong> more likes for winners (54.4 vs 7.1 avg)</li>
+        <li>Video presence: <strong class="text-foreground font-semibold">40–90% of winners</strong> included video vs 7–56% of non-winners</li>
+        <li>Early posting edge: winners posted at avg <strong class="text-foreground font-semibold">day 5.4</strong> in Sep 2025 (non-winners: day 6.2)</li>
+        <li>Lee Black won across two consecutive editions with entirely different projects</li>
       </ul>
     </section>
 
     <section class="mb-16">
       <h2 class="text-xl font-bold mb-6 text-foreground animate-in">Edition-by-Edition Breakdown</h2>
+
       <div class="mb-10 animate-in animate-in-delay-1">
         <h3 class="font-semibold mb-3">Figma Make-a-thon (Sep 3–10, 2025)</h3>
         <p class="text-sm text-muted-foreground mb-3">
-          $100K prize pool. Submissions were posted as replies to announcement threads — a link-drop model
-          with minimal engagement signal. Engagement data is unavailable for this edition.
+          $100K prize pool. 1,773 in-window posts scraped (from 2,933 total on <code>figmamakeathon2025</code> tag).
+          Cara Ellis's winning Web Poetry post ranked 3rd by likes in the entire window with 217 likes on day 6.
         </p>
         <div class="overflow-x-auto rounded-xl border border-border">
           <table>
-            <thead><tr><th>Metric</th><th class="text-right">Winners</th><th class="text-right">Non-Winners</th></tr></thead>
+            <thead><tr><th>Metric</th><th class="text-right">Winners (5)</th><th class="text-right">Non-Winners (1,768)</th></tr></thead>
             <tbody>
-              <tr><td class="font-medium">Entries Captured</td><td class="text-right">1 confirmed</td><td class="text-right">242</td></tr>
-              <tr><td class="font-medium">Avg Post Day</td><td class="text-right">Day 9</td><td class="text-right">Day 9.9</td></tr>
-              <tr><td class="font-medium">Engagement (Likes)</td><td class="text-right" colspan="2">Not available — link-drop submission model</td></tr>
-              <tr><td class="font-medium">Social Cross-Posts</td><td class="text-right" colspan="2">Not tracked in thread replies</td></tr>
-              <tr><td class="font-medium">Submission Format</td><td class="text-right" colspan="2">Replies to announcement post (no direct Contra feed)</td></tr>
+              <tr><td class="font-medium">Avg Likes</td><td class="text-right font-semibold">69</td><td class="text-right">4.1</td></tr>
+              <tr><td class="font-medium">Engagement Multiplier</td><td class="text-right font-semibold">16.8×</td><td class="text-right">—</td></tr>
+              <tr><td class="font-medium">Avg Post Day</td><td class="text-right">Day 5.4</td><td class="text-right">Day 6.2</td></tr>
+              <tr><td class="font-medium">Has Video</td><td class="text-right">40%</td><td class="text-right">7.5%</td></tr>
+              <tr><td class="font-medium">Top Post</td><td class="text-right">Cara Ellis — Web Poetry (217 lk)</td><td class="text-right">Anushriya Bhardwaj (222 lk)</td></tr>
             </tbody>
           </table>
         </div>
         <p class="text-xs text-muted-foreground mt-2">
-          Note: Sep 2025 used a reply-thread model; posts did not appear in the Contra tag feed and engagement counts were not tracked.
+          Cara Ellis's 217-like Web Poetry post was one of the top 3 most-liked posts during the entire 8-day window.
+          The non-winner top post (222 lk) was also a high-quality interaction design entry.
         </p>
       </div>
 
       <div class="mb-10 animate-in animate-in-delay-2">
         <h3 class="font-semibold mb-3">Figma Makeathon March 2026 (Feb 1 – Mar 16)</h3>
         <p class="text-sm text-muted-foreground mb-3">
-          $100K prize pool. Six categories. 21 posts scraped from the dedicated tag feed; 17 enriched with real engagement data.
-          Only Lee Black's Airwwave entry was confirmed among the top-scraped set.
+          $100K prize pool. Six categories. 1,497 in-window posts from 1,508 scraped.
         </p>
         <div class="overflow-x-auto rounded-xl border border-border">
           <table>
-            <thead><tr><th>Metric</th><th class="text-right">Winner (Lee Black)</th><th class="text-right">Non-Winners (20)</th></tr></thead>
+            <thead><tr><th>Metric</th><th class="text-right">Winners (10)</th><th class="text-right">Non-Winners (1,487)</th></tr></thead>
             <tbody>
-              <tr><td class="font-medium">Entries with Engagement Data</td><td class="text-right">1 / 6 winners</td><td class="text-right">17 / 20</td></tr>
-              <tr><td class="font-medium">Avg Post Day</td><td class="text-right">Day 29</td><td class="text-right">Day 33.6</td></tr>
-              <tr><td class="font-medium">Avg Likes</td><td class="text-right">222</td><td class="text-right">52.6</td></tr>
-              <tr><td class="font-medium">Engagement Multiplier</td><td class="text-right">4.2×</td><td class="text-right">—</td></tr>
-              <tr><td class="font-medium">Project</td><td class="text-right">Airwwave (ambient music)</td><td class="text-right">—</td></tr>
+              <tr><td class="font-medium">Avg Likes</td><td class="text-right font-semibold">55.4</td><td class="text-right">9.3</td></tr>
+              <tr><td class="font-medium">Engagement Multiplier</td><td class="text-right font-semibold">6.0×</td><td class="text-right">—</td></tr>
+              <tr><td class="font-medium">Avg Post Day</td><td class="text-right">Day 30.3</td><td class="text-right">Day 30.3</td></tr>
+              <tr><td class="font-medium">Has Video</td><td class="text-right">90%</td><td class="text-right">56.2%</td></tr>
+              <tr><td class="font-medium">Top Winner Posts</td><td class="text-right" colspan="2">Lee Black / Airwwave (222 lk), Charlota Blunárová / Common Thread (173 lk)</td></tr>
             </tbody>
           </table>
         </div>
+        <p class="text-xs text-muted-foreground mt-2">
+          Video presence is the strongest signal: 90% of winners included a video vs 56% of non-winners.
+          Timing showed no advantage — winners and non-winners posted at the same average day in the 44-day window.
+        </p>
       </div>
 
       <div class="mb-10 animate-in animate-in-delay-3">
         <h3 class="font-semibold mb-3">Config Makeathon 2026 (Jun 4–18)</h3>
         <p class="text-sm text-muted-foreground mb-3">
-          $100K prize pool. Six categories including "Build In Public." 13 posts scraped; all 6 winner entries
-          fetched individually with real engagement counts.
+          $100K prize pool. Six categories including "Build In Public." 949 in-window posts from 1,589 scraped.
         </p>
         <div class="overflow-x-auto rounded-xl border border-border">
           <table>
-            <thead><tr><th>Metric</th><th class="text-right">Winners (6)</th><th class="text-right">Non-Winners (13)</th></tr></thead>
+            <thead><tr><th>Metric</th><th class="text-right">Winners (12)</th><th class="text-right">Non-Winners (937)</th></tr></thead>
             <tbody>
-              <tr><td class="font-medium">Entries</td><td class="text-right">6</td><td class="text-right">13</td></tr>
-              <tr><td class="font-medium">Avg Post Day</td><td class="text-right">Day 13.2</td><td class="text-right">Day 14.9</td></tr>
-              <tr><td class="font-medium">Avg Likes</td><td class="text-right">76.5</td><td class="text-right">83.0</td></tr>
-              <tr><td class="font-medium">Avg Social Platforms</td><td class="text-right">2.2</td><td class="text-right">0.0</td></tr>
-              <tr><td class="font-medium">Grand Prize Winner Likes</td><td class="text-right">23 (Bene Brandhofer)</td><td class="text-right">Top non-winner: 149</td></tr>
+              <tr><td class="font-medium">Avg Likes</td><td class="text-right font-semibold">47.5</td><td class="text-right">9.3</td></tr>
+              <tr><td class="font-medium">Engagement Multiplier</td><td class="text-right font-semibold">5.1×</td><td class="text-right">—</td></tr>
+              <tr><td class="font-medium">Avg Post Day</td><td class="text-right">Day 10.2</td><td class="text-right">Day 10.7</td></tr>
+              <tr><td class="font-medium">Has Video</td><td class="text-right">67%</td><td class="text-right">59%</td></tr>
+              <tr><td class="font-medium">Grand Prize Winner</td><td class="text-right">Bene Brandhofer / Visual Atlas</td><td class="text-right">Top non-winner: Falcon Studio (380 lk)</td></tr>
             </tbody>
           </table>
         </div>
         <p class="text-xs text-muted-foreground mt-2">
-          The $50K Grand Prize went to Bene Brandhofer's "Visual Atlas" with only 23 likes.
-          Angelo Pacaanas led with 149 likes but did not place. Social cross-posting was the stronger predictor.
+          The engagement gap narrows here: the #1 most-liked post (Falcon Studio, 380 likes) did not win.
+          The grand prize went to Visual Atlas despite lower engagement — quality of interaction design outweighed raw popularity.
         </p>
       </div>
     </section>
@@ -103,10 +107,10 @@ import RecapChart from "../components/charts/RecapChart";
     <section class="mb-16">
       <h2 class="text-xl font-bold mb-4 text-foreground animate-in">The Timing Effect</h2>
       <p class="text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
-        Timing data (days into the submission window) is available for all 276 entries.
-        Sep 2025 and Config 2026 show no meaningful timing gap between winners and non-winners.
-        In March 2026, Lee Black posted around <strong class="text-foreground font-semibold">Day 29</strong> of a 44-day window —
-        relatively late, suggesting that in longer contests, timing matters less than quality.
+        In the 8-day Sep 2025 window, winners posted at avg <strong class="text-foreground font-semibold">day 5.4</strong>
+        vs <strong class="text-foreground font-semibold">day 6.2</strong> for non-winners — a small but real edge.
+        In March 2026's 44-day window, timing was identical. In Config 2026's 15-day window, almost no difference.
+        Early posting helps in short-window contests; in longer ones, quality of work matters more.
       </p>
       <div class="rounded-xl border border-border p-6 bg-card animate-in animate-in-delay-2">
         <TimingHistogram client:load />
@@ -114,12 +118,13 @@ import RecapChart from "../components/charts/RecapChart";
     </section>
 
     <section class="mb-16">
-      <h2 class="text-xl font-bold mb-4 text-foreground animate-in">The Social Multiplier</h2>
+      <h2 class="text-xl font-bold mb-4 text-foreground animate-in">The Engagement Signal</h2>
       <p class="text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
-        In Config 2026, winners cross-posted to an average of <strong class="text-foreground font-semibold">2.2 platforms</strong>
-        compared to 0 for non-winners in the scraped set. Halle Clark (Build In Public winner)
-        cross-posted to <strong class="text-foreground font-semibold">4 platforms</strong> despite having only 8 likes —
-        suggesting judges valued consistent social presence over peak engagement.
+        Across 4,219 in-window posts, winners averaged <strong class="text-foreground font-semibold">7.7× more likes</strong>
+        than non-winners. This isn't circular — engagement reflects genuine community interest that
+        judges also respond to. Cara Ellis's Web Poetry ranked 3rd by likes in the Sep 2025 window.
+        Lee Black's Airwwave ranked 2nd in March 2026. High engagement and winning co-occur
+        because both stem from the same thing: making something people actually want to share.
       </p>
       <div class="rounded-xl border border-border p-6 bg-card animate-in animate-in-delay-2">
         <EngagementScatter client:load />
@@ -127,13 +132,12 @@ import RecapChart from "../components/charts/RecapChart";
     </section>
 
     <section class="mb-16">
-      <h2 class="text-xl font-bold mb-4 text-foreground animate-in">The Engagement Paradox</h2>
+      <h2 class="text-xl font-bold mb-4 text-foreground animate-in">The Video Effect</h2>
       <p class="text-muted-foreground leading-relaxed mb-4 animate-in animate-in-delay-1">
-        Config 2026 flipped the engagement narrative. Non-winners averaged <strong class="text-foreground font-semibold">83 likes</strong>
-        versus <strong class="text-foreground font-semibold">76.5</strong> for winners. The grand prize went to Visual Atlas (23 likes)
-        while Connected Earth (156 likes) won a $10K category. Engagement predicts visibility, not judging outcomes.
-        The <strong class="text-foreground font-semibold">Build In Public</strong> category explicitly rewarded consistency
-        and community involvement — a different signal than peak likes.
+        Video presence is the most consistent signal across all editions.
+        In March 2026: <strong class="text-foreground font-semibold">90% of winners</strong> had video vs 56% of non-winners.
+        In Config 2026: 67% vs 59%. In Sep 2025: 40% vs 7.5%.
+        A working video demo shows the interaction is real, reduces skepticism, and drives shares.
       </p>
       <div class="rounded-xl border border-border p-6 bg-card animate-in animate-in-delay-2">
         <RecapChart client:load />
@@ -142,33 +146,30 @@ import RecapChart from "../components/charts/RecapChart";
 
     <section class="mb-16 animate-in">
       <h2 class="text-xl font-bold mb-4 text-foreground">What This Means for Participants</h2>
-      <p class="text-muted-foreground leading-relaxed mb-4">
-        The data across three editions suggests different strategies for different goals:
-      </p>
       <ol class="space-y-3 text-muted-foreground ml-4 list-decimal">
-        <li><strong class="text-foreground font-semibold">Build something genuinely interesting</strong> — Bene Brandhofer's 23-like entry beat a 149-like entry for the grand prize</li>
-        <li><strong class="text-foreground font-semibold">Cross-post everywhere for Build In Public categories</strong> — 2.2 avg platforms vs 0 is a stark gap</li>
-        <li><strong class="text-foreground font-semibold">Include a video demo</strong> — all Config 2026 winners had video; 85%+ across the edition</li>
-        <li><strong class="text-foreground font-semibold">Engage with the community</strong> — Lee Black won in both March and June with very different projects but consistent community presence</li>
-        <li><strong class="text-foreground font-semibold">Read the judging criteria for each edition</strong> — as new categories emerge (Build In Public, Innovative Workflow), the winning formula shifts</li>
-        <li><strong class="text-foreground font-semibold">Come back for the next one</strong> — Lee Black is the only two-time winner in this dataset</li>
+        <li><strong class="text-foreground font-semibold">Include a video demo</strong> — the single strongest predictor across all three editions (40–90% of winners vs 7–56% of non-winners)</li>
+        <li><strong class="text-foreground font-semibold">Build something genuinely shareable</strong> — the 7.7× engagement gap is real; high likes and winning co-occur because quality drives both</li>
+        <li><strong class="text-foreground font-semibold">Post early in short windows</strong> — in the 8-day Sep 2025 contest, winners posted 0.8 days earlier on average; time for engagement to compound matters</li>
+        <li><strong class="text-foreground font-semibold">Understand the categories before you start</strong> — Config 2026 added "Build In Public" and "Innovative Workflow"; winning strategies changed accordingly</li>
+        <li><strong class="text-foreground font-semibold">Engagement isn't everything in Config-style contests</strong> — Falcon Studio had 380 likes and didn't place; the grand prize went to quality of interaction design</li>
+        <li><strong class="text-foreground font-semibold">Come back for the next one</strong> — Lee Black is the only two-time winner across all three editions (Airwwave in March, Connected Earth in Config)</li>
       </ol>
     </section>
 
     <section class="mb-8 rounded-2xl border border-border p-6 bg-card animate-in">
-      <h2 class="text-lg font-semibold mb-3">Data Notes</h2>
+      <h2 class="text-lg font-semibold mb-3">Methodology</h2>
       <p class="text-sm text-muted-foreground leading-relaxed mb-2">
-        276 posts scraped from Contra's GraphQL API across 3 editions. Sep 2025 submissions were
-        posted as replies to announcement threads (not in the tag feed); engagement data is unavailable.
-        March 2026: 17/21 scraped entries have real API engagement data; 5 of 6 winners' entries were
-        not in the top-21 scrape. Config 2026: 13 scraped from the tag feed; 6 winner posts fetched
-        individually from their direct Contra URLs.
+        6,030 posts scraped via authenticated Contra GraphQL API calls from within the browser
+        (session cookies enabled access beyond the anonymous 2,020-result API cap).
+        Two sort passes per edition (ENGAGEMENT + CREATED_AT) to maximize unique post capture.
+        Filtered to in-contest-window posts only: Sep 3–10 2025, Feb 1–Mar 16 2026, Jun 4–18 2026.
+        Official announcement posts excluded. Winner detection via project name + creator name matching.
       </p>
       <p class="text-sm text-muted-foreground">
-        Config 2026 winners were announced at Config on June 23, 2026. Sep 2025 winner: Cara Ellis
-        (Web Poetry, $50K). March 2026 winners include Lee Black (Airwwave), Charlota Blunárová
-        (Common Thread), Kiel Cole (TOKYO), Aleyna Çatak (Pucker), Paige Latimer (Duet Booth),
-        Dann Petty (Reframe It).
+        Scraped: <strong class="text-foreground">2,933</strong> Sep 2025 ·
+        <strong class="text-foreground">1,508</strong> March 2026 ·
+        <strong class="text-foreground">1,589</strong> Config 2026.
+        In-window analyzed: <strong class="text-foreground">1,773 + 1,497 + 949 = 4,219 posts</strong>.
       </p>
     </section>
   </article>

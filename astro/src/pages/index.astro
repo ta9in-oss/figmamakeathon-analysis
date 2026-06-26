@@ -35,8 +35,8 @@ import Layout from "../layouts/Layout.astro";
         <div class="text-sm text-muted-foreground">Makeathon Editions</div>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-3">
-        <div class="text-4xl font-medium mb-1 stat-number" style="color:#BA7517; line-height:1.1">276</div>
-        <div class="text-sm text-muted-foreground">Entries Scraped</div>
+        <div class="text-4xl font-medium mb-1 stat-number" style="color:#BA7517; line-height:1.1">6,030</div>
+        <div class="text-sm text-muted-foreground">Posts Scraped</div>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-4">
         <div class="text-4xl font-medium mb-1 stat-number" style="color:#BA7517; line-height:1.1">$300K</div>
@@ -45,38 +45,37 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <h2 class="text-2xl font-medium mb-2 animate-in" style="line-height:1.2">What the Data Shows</h2>
-    <p class="text-muted-foreground mb-8 animate-in animate-in-delay-1" style="line-height:1.7">Six patterns from real Contra data, social media analysis, and winner deep-dives.</p>
+    <p class="text-muted-foreground mb-8 animate-in animate-in-delay-1" style="line-height:1.7">4,219 in-window posts analyzed. Real engagement data. Real winners. Three editions.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-1">
-        <h3 class="font-medium mb-2">Quality Over Popularity</h3>
+        <h3 class="font-medium mb-2">7.7× Engagement Gap</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          In Config 2026, the $50K grand prize went to a post with <strong class="text-foreground font-medium">23 likes</strong>
-          while the most-liked non-winner had 149. Judges reward originality, not just popularity.
+          Winners averaged <strong class="text-foreground font-medium">54.4 likes</strong> vs
+          <strong class="text-foreground font-medium">7.1</strong> for non-winners across all three editions.
+          High engagement and winning co-occur because quality drives both.
         </p>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-2">
-        <h3 class="font-medium mb-2">March 2026: Engagement Mattered</h3>
+        <h3 class="font-medium mb-2">Video is the Strongest Signal</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          Lee Black's Airwwave entry had <strong class="text-foreground font-medium">222 likes</strong> vs
-          the non-winner average of 52.6 — a <strong class="text-foreground font-medium">4.2×</strong> gap.
-          Engagement signaled quality when categories were narrower.
+          40–90% of winners included a video demo vs only 7–56% of non-winners.
+          A working demo shows the interaction is real and drives shares.
         </p>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-3">
-        <h3 class="font-medium mb-2">Social Presence Predicts Winning</h3>
+        <h3 class="font-medium mb-2">Cara Ellis Had 217 Likes</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          Config 2026 winners averaged <strong class="text-foreground font-medium">2.2 platforms</strong>
-          cross-posted vs <strong class="text-foreground font-medium">0</strong> for non-winners.
-          Build In Public is a real judging category now.
+          The Sep 2025 winner's Web Poetry post was the <strong class="text-foreground font-medium">3rd most-liked</strong>
+          post in the entire 8-day contest window. Winning and community popularity aligned.
         </p>
       </div>
       <div class="rounded-2xl border border-border p-6 bg-card card-hover animate-in animate-in-delay-4">
         <h3 class="font-medium mb-2">Lee Black Won Twice</h3>
         <p class="text-sm text-muted-foreground" style="line-height:1.7">
-          The only two-time winner in the dataset: <strong class="text-foreground font-medium">Airwwave</strong> (March 2026)
+          The only two-time winner: <strong class="text-foreground font-medium">Airwwave</strong> (March 2026)
           and <strong class="text-foreground font-medium">Connected Earth</strong> (Config 2026).
-          Consistency across very different projects.
+          Entirely different projects, same consistent quality.
         </p>
       </div>
     </div>
@@ -84,10 +83,9 @@ import Layout from "../layouts/Layout.astro";
     <div class="mt-12 rounded-2xl border border-border p-6 bg-card animate-in">
       <h3 class="font-medium mb-2">Methodology Note</h3>
       <p class="text-sm text-muted-foreground" style="line-height:1.7">
-        276 posts scraped from Contra's GraphQL API (persisted query pagination).
-        Sep 2025 submissions were thread replies — engagement data unavailable.
-        March 2026: 17/21 scraped entries have real like counts from the API.
-        Config 2026: 13 scraped from tag feed + 6 winner posts fetched individually.
+        6,030 posts scraped via authenticated Contra GraphQL API from within the browser
+        (session auth bypassed the 2,020-result anonymous cap). Two sort passes per tag
+        (ENGAGEMENT + CREATED_AT). Filtered to 4,219 in-window posts across all 3 editions.
         Config 2026 winners announced at Config, June 23, 2026. Full methodology in the report.
       </p>
     </div>
