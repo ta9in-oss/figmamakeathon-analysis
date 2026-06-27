@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import TimingHistogram from "../components/charts/TimingHistogram";
 import EngagementScatter from "../components/charts/EngagementScatter";
-import RecapChart from "../components/charts/RecapChart";
+import VideoVsSocialChart from "../components/charts/VideoVsSocialChart";
 ---
 
 <Layout title="Report">
@@ -138,7 +138,7 @@ import RecapChart from "../components/charts/RecapChart";
         A working video demo shows the interaction is real, reduces skepticism, and drives shares.
       </p>
       <div class="rounded-xl border border-border p-6 bg-card animate-in animate-in-delay-2">
-        <RecapChart client:load />
+        <VideoVsSocialChart client:load />
       </div>
     </section>
 
