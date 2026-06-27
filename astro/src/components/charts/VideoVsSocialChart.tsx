@@ -43,8 +43,8 @@ export default function VideoVsSocialChart() {
         data: {
           labels,
           datasets: [
-            { label: 'Winners — Has Video (%)', data: videoW, backgroundColor: winnerColor(), borderRadius: 4, yAxisID: 'y' },
-            { label: 'Non-Winners — Has Video (%)', data: videoNW, backgroundColor: nonWinnerColor(), borderRadius: 4, yAxisID: 'y' },
+            { label: 'Winners with Video', data: videoW, backgroundColor: winnerColor(), borderRadius: 4, yAxisID: 'y' },
+            { label: 'Non-Winners with Video', data: videoNW, backgroundColor: nonWinnerColor(), borderRadius: 4, yAxisID: 'y' },
           ],
         },
         options: {

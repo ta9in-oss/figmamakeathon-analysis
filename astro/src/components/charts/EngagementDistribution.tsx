@@ -4,7 +4,8 @@ import { loadCSV, gridColor, type Entry } from './loadData';
 
 Chart.register(BarController, CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
-const EDITION_COLORS = ['#1D9E75', '#BA7517', '#888780'];
+// Distinct from winner/non-winner teal and gray so edition bars don't imply "winner"
+const EDITION_COLORS = ['#3B82F6', '#BA7517', '#8B5CF6'];
 const TIERS = ['0 likes', '1–5', '6–20', '21–50', '50+'];
 const EDITION_LABELS = ['Sep 2025', 'Mar 2026', 'Config 2026'];
 const EDITION_KEYS = ['Figma Make-a-thon (Sep 2025)', 'Figma Makeathon March 2026', 'Config Makeathon 2026'];
