@@ -35,8 +35,10 @@ export default function WinnerTimeline() {
             label: 'Winners',
             data: winners,
             backgroundColor: winnerColor(),
-            pointRadius: 8,
-            pointHoverRadius: 10,
+            borderColor: winnerColor(),
+            borderWidth: 1,
+            pointRadius: 14,
+            pointHoverRadius: 16,
             pointStyle: 'star',
           },
         ],
@@ -50,7 +52,7 @@ export default function WinnerTimeline() {
             callbacks: {
               label: (ctx: any) => {
                 const pt = ctx.raw as any;
-                const name = pt.label ? ` — ${pt.label}` : '';
+                const name = pt.label ? ` (${pt.label})` : '';
                 return `Day ${pt.x}, ${pt.y} likes${name}`;
               }
             }

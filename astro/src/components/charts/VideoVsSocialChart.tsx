@@ -51,7 +51,7 @@ export default function VideoVsSocialChart() {
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
-            legend: { position: 'top' },
+            legend: { display: false },
             tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.raw}%` } },
           },
           scales: {
