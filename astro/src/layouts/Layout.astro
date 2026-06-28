@@ -17,6 +17,14 @@ const { title, description } = Astro.props;
     <meta name="description" content={description || "Figma x Contra Makeathon Analysis — Data-backed insights on what separates winners from everyone else."} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} — Figma Makeathon Analysis</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKPWG6LYPJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PKPWG6LYPJ');
+    </script>
   </head>
   <body class="min-h-screen">
     <nav class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-sm fade-in">
